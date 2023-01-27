@@ -50,7 +50,7 @@ nayan = """
 def call():
 	check_intr()
 	os.system('clear')
-        check_intr()
+        
 	print(nayan)
 	number=str(input("Enter Your Number : "))
 
