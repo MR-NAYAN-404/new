@@ -37,7 +37,7 @@ nayan = """
 \033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝
 """
 os.system("clear")
-nayan()
+print(nayan)
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
   id = "|".join(uuid)
@@ -57,7 +57,7 @@ def chk():
   except: 
     sys.exit() 
     if name == '__main__': 
-     print (logo)
+     print (nayan)
      chk() 
     
 chk()
