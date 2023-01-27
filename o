@@ -1,4 +1,4 @@
-import requests,os,time
+import requests,os,time,sys
 try:
   import tload
 except ModuleNotFoundError:
