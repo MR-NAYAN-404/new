@@ -40,7 +40,7 @@ os.system("clear")
 print(nayan)
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "|".join(uuid)
+  id = "+".join(uuid)
   print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
   try: 
     httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
