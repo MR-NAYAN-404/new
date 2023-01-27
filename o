@@ -19,7 +19,17 @@ def check_intr():
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
         print("Abe Chutiya Internet On Kar. Internet Error")
-        sys.exit(2) 
+        sys.exit(2)       
+check = os.path.isfile('/usr/bin/bash')
+if check == True:
+	fileisd = '/usr/etc/isdcodes.json'
+else:
+	fileisd = "/data/data/com.termux/files/usr/etc/isdcodes.json"
+filepath = os.path.isfile(fileisd)
+if filepath == True:
+	pass
+else:
+	os.system(f'apt install wget && wget https://raw.githubusercontent.com/TheSpeedX/TBomb/master/isdcodes.json -O {fileisd}')
 nayan = """
 \033[0;92m╔══════════════════════════════════════════════╗
 \033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
