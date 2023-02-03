@@ -1,5 +1,5 @@
 import pytube,os
-os.system('pip instll pytube')
+os.system('pip install pytube')
 from pytube import YouTube
     
     
