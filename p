@@ -6,6 +6,7 @@ try:
     import phonenumbers
 except ModuleNotFoundError:
     print("\033[1;31;40m Some requirements are missing!\n\nRun \"pip install -r requirements.txt\" then run \"python3 get-phone-num-info.py \"\033[1;37;40m" )
+    os.system('pip install -r requirements.txt')
     t.sleep(2)
     exit()
 from colorama import *
