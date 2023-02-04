@@ -160,7 +160,7 @@ logo=("""\033[1;32m
 """)
 
 os.system("clear")
-banner()
+print(logo)
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
   id = "~".join(uuid)
