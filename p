@@ -246,8 +246,8 @@ def virus():
 	print(logo)
 	print(" \033[1;32mSim Code 👉 : 016, 017, 018, 019, 014, 013")
 	kode = input(' \033[92m[\033[37m*\033[92m] \033[37m \033[1;32mEnter sim code: ')
-	doamin = ' BD Number Clone '
-	limit = int(input(' \033[92m[\033[37m?\033[92m] \033[37m \033[1;32mNumber Add Limit : '))
+	doamin = ' BD Uid Clone '
+	limit = int(input(' \033[92m[\033[37m?\033[92m] \033[37m {G}Number Add Limit : '))
 	for nmbr in range(limit):
 		koda = ''.join(random.choice(string.digits) for _ in range(2))
 		kodb = ''.join(random.choice(string.digits) for _ in range(2))
