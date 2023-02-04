@@ -222,17 +222,20 @@ def Main():
 	os.system('clear')
 	print(logo)
 	print(60*'\033[1;32m═')
-	print('\033[1;32m[1] Start Cloning ')
-	print("\033[1;32m[2] Contact Owner Fb")
-	print("\033[1;32m[2] Contact Owner wp")
+	print('\033[1;32m[1] Start Uid Cloning ')
+	print('\033[1;32m[2] Start Number Cloning ')
+	print("\033[1;32m[3] Contact Owner Fb")
+	print("\033[1;32m[4] Contact Owner wp")
 	print('\033[1;32m[0] Back')
 	print(60*'═')
 	opt = input('Choose option :> ')
 	if opt =='1':
 		virus()
 	if opt =='2':
-		os.system('xdg-open https://www.facebook.com/N4Y4N.8R4ND.Y0UR.N3X7.D4D');time.sleep(1)
+		nayan()
 	if opt =='3':
+		os.system('xdg-open https://www.facebook.com/N4Y4N.8R4ND.Y0UR.N3X7.D4D');time.sleep(1)
+	if opt =='4':
 		os.system('xdg-open https://wa.me/+8801615298449');time.sleep(1)
 	elif opt =='0':
 		exit()
