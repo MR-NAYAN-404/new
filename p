@@ -163,18 +163,23 @@ os.system("clear")
 banner()
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "|".join(uuid)
-  print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
+  id = "~".join(uuid)
+  print("\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
   try: 
-    httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
+    httpCaht = requests.get("https://github.com/Kamrul-chowdhury404/Approval/blob/main/approval.txt").text 
     if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVEðŸ˜˜........\033[97m")
+      print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
       msg = str(os.geteuid()) 
       time.sleep(3) 
       pass 
     else: 
-      print("\033[0;96m YOUR key IS NOT ACTIVE\n THIS TOOL IS PAID\n IF YOU BUY MY TOOL\n SO YOUR KEY COPY AND SEND ME MESSAGE ON WHATSAPP ") 
-      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*public*%20*clone*')
+      print("\033[0;31mYOUR key IS NOT ACTIVE💔") 
+      print("\033[0;31mThis Tool Is Paid")
+      nm=input("\033[0;32mYour Name: ")
+      print("\033[0;32mHow many days do you want to take it for?")
+      dt=input("DAYS: ")
+      print('\033[0;32mYour Request Submitted Please Wait')
+      os.system('xdg-open  https://wa.me/+8801823036358?text=*Hello*%2C%20*MR.KAMRUL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+dt+'*Days*%20*Name*%20'+nm+'*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
