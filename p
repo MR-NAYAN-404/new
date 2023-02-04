@@ -254,7 +254,7 @@ def virus():
 		tl = str(len(user))
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Name:"+num)
-		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {NUM CLONE}")
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
 		print('\033[92m[\033[37m*\033[92m] \033[37m  Total ids:\033[1;92m '+tl)
 		print(f'\033[92m[\033[37m*\033[92m] \033[37m  BD Code :\033[1;92m {kode} ')
 		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
