@@ -160,27 +160,21 @@ logo=("""\033[1;32m
 """)
 
 os.system("clear")
-print (logo)
+banner()
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
   id = "|".join(uuid)
-  print("\n\x1b[32;1m This Tool Is Paid ")
-  print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
-  print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
-  print("\n\x1b[32;1m Your Key Is Not Active💔")
-  print("\33[1;32m If you want to drive this tool then buy it with payment")
-  num=input("\n\033[92m[\033[37m*\033[92m] \033[37mEnter Your Name : ")
-  day=input("\n\033[92m[\033[37m*\033[92m] \033[37mHow many days do you want to use this tool? : ")
+  print("\n\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
   try: 
     httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
     if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
+      print("\033[92m  YOUR KEY IS ACTIVEðŸ˜˜........\033[97m")
       msg = str(os.geteuid()) 
       time.sleep(3) 
       pass 
     else: 
-      print('\033[0;32mYour Request Submitted Please Wait')
-      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*DAVIL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+day+'*Days*%20*Name*%20'+num)
+      print("\033[0;96m YOUR key IS NOT ACTIVE\n THIS TOOL IS PAID\n IF YOU BUY MY TOOL\n SO YOUR KEY COPY AND SEND ME MESSAGE ON WHATSAPP ") 
+      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*public*%20*clone*')
       time.sleep(3) 
       sys.exit() 
   except: 
