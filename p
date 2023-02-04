@@ -184,7 +184,7 @@ def chk():
   try: 
     httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
     if id in httpCaht: 
-    	print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
+  	print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
       print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
       msg = str(os.geteuid()) 
       time.sleep(3) 
