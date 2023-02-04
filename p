@@ -172,7 +172,7 @@ def chk():
   num=input("\n\033[92m[\033[37m*\033[92m] \033[37mEnter Your Name : ")
   day=input("\n\033[92m[\033[37m*\033[92m] \033[37mHow many days do you want to use this tool? : ")
   try: 
-    httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/Fuckt").text 
+    httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/Fuck").text 
     if id in httpCaht: 
       print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
       msg = str(os.geteuid()) 
