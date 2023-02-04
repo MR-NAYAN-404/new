@@ -173,7 +173,7 @@ os.system("clear")
 print (logo)
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "|".join(uuid)
+  id = "-".join(uuid)
   print("\n\x1b[32;1m This Tool Is Paid ")
   print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
   print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
