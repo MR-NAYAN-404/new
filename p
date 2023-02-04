@@ -177,19 +177,20 @@ def chk():
   print("\n\x1b[32;1m This Tool Is Paid ")
   print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
   print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
-  print("\n\x1b[32;1m Your Key Is Not Active💔")
+  print("\n\x1b[32;1m Your Key Is Not Active")
   print("\33[1;32m If you want to drive this tool then buy it with payment")
   num=input("\n\033[92m[\033[37m*\033[92m] \033[37mEnter Your Name : ")
   day=input("\n\033[92m[\033[37m*\033[92m] \033[37mHow many days do you want to use this tool? : ")
   try: 
     httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
     if id in httpCaht: 
-      print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
+      print("\033[92m  YOUR KEY IS ACTIVEðŸ˜˜........\033[97m")
       msg = str(os.geteuid()) 
       time.sleep(3) 
       pass 
     else: 
-      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Randim*%20*Tool*My*%2C%20*Name*%20*'+num+'*%20*Day*%20*'+da+'*%20*My*%20*Key*%20*'+id)
+      print('\033[0;32mYour Request Submitted Please Wait')
+      os.system('xdg-open  https://wa.me/+8801823036358?text=*Hello*%2C%20*MR.KAMRUL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+day+'*Days*%20*Name*%20'+num+'*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
