@@ -173,7 +173,7 @@ os.system("clear")
 print (logo)
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "-".join(uuid)
+  id = "|".join(uuid)
   print("\n\x1b[32;1m This Tool Is Paid ")
   print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
   print("\n\x1b[32;1m YOUR KEY : \033[94m"+id) 
@@ -189,7 +189,7 @@ def chk():
       time.sleep(3) 
       pass 
     else: 
-      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Randim*%20*Tool*')
+      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Randim*%20*Tool*My*%2C%20*Name*%20*'+num+'*%20*Day*%20*'+day+'*%20*My*%20*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
