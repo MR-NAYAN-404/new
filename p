@@ -189,8 +189,7 @@ def chk():
       time.sleep(3) 
       pass 
     else: 
-      print('\033[0;32mYour Request Submitted Please Wait')
-      os.system('xdg-open  https://wa.me/+8801823036358?text=*Hello*%2C%20*MR.KAMRUL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20*'+day+'Days*%20*Name*%20*'+num+'Key*%20*'+id)
+      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Randim*%20*Tool*My*%2C%20*Name*%20*'+num+'*%20*Day*%20*'+da+'*%20*My*%20*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
