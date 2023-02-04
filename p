@@ -31,38 +31,43 @@ try:
 except ImportError:
     print('\n [âœ“] installing bs4 !...\n')
     os.system('pip install bs4')
-R = '\033[1;31m' # PUTIH
-G = '\033[1;32m' # PUTIH
-H = '\033[1;32m' # PUTIH
-Y = '\033[1;33m' # PUTIH
-Q = '\033[1;37m'
-T = '\033[1;34m'
+try:
+  import tload
+except ModuleNotFoundError:
+  os.system('pip install tload')
+try:
+	import colorama
+except ModuleNotFoundError:
+	print("colorama is not Installed")
+	os.system("pip install colorama")
+try:
+	import requests
+except ModuleNotFoundError:
+	print("Requests is not Installed")
+	os.system("pip install requests")
+try:
+	import requests
+except ModuleNotFoundError:
+	print("bs4 is not Installed")
+	os.system("pip install bs4")
+	
+from colorama import Fore,Style
+from colorama import init
+init(autoreset=False)
+print(Style.BRIGHT)
+R = Style.BRIGHT+Fore.RED
+B = Style.BRIGHT+Fore.BLUE
+G = Style.BRIGHT+Fore.GREEN
+C = Style.BRIGHT+Fore.CYAN
+Y = Style.BRIGHT+Fore.YELLOW
+M = Style.BRIGHT+Fore.MAGENTA
+W = Style.BRIGHT+Fore.WHITE
+colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
+W='\033[0m'
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
 from concurrent.futures import ThreadPoolExecutor as ahmadAXI
 from datetime import datetime
 from bs4 import BeautifulSoup
-R = '\x1b[1;91m' 
-G = '\x1b[1;92m' 
-Y = '\x1b[1;93m' 
-### WARNA RANDOM ###
-P = '\x1b[1;97m' # PUTIH
-M = '\x1b[1;91m' # MERAH
-H = '\x1b[1;92m' # HIJAU
-K = '\x1b[1;93m' # KUNING
-B = '\x1b[1;94m' # BIRU
-U = '\x1b[1;95m' # UNGU
-MXD = '\033[1;92m' #MAHADIGREEN
-O = '\x1b[1;96m' # BIRU MUDA
-N = '\x1b[0m'    # WARNA MATI
-A = '\x1b[1;90m' # WARNA ABU ABU
-BN = '\x1b[1;107m' # BELAKANG PUTIH
-BBL = '\x1b[1;106m' # BELAKANG BIRU LANGIT
-BP = '\x1b[1;105m' # BELAKANG PINK
-BB = '\x1b[1;104m' # BELAKANG BIRU
-BK = '\x1b[1;103m' # BELAKANG KUNING
-BH = '\x1b[1;102m' # BELAKANG HIJAU
-BM = '\x1b[1;101m' # BELAJANG MERAH
-BA = '\x1b[1;100m' # BELAKANG ABU ABU
 ct = datetime.now()
 n = ct.month
 bulan = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Agustus', 'September', 'October', 'November', 'December']
@@ -79,14 +84,6 @@ ta = current.year
 bu = current.month
 ha = current.day
 op = bulan[nTemp]
-P = '\x1b[1;97m' # 
-M = '\033[1;31m' # 
-H = '\033[1;32m' # 
-K = '\x1b[1;97m' # 
-B = '\x1b[1;97m' # 
-U = '\x1b[1;95m' # 
-O = '\x1b[1;97m' # 
-N = '\x1b[0m'    # 
 my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
@@ -174,7 +171,7 @@ def chk():
       pass 
     else: 
       print("\033[0;31mYOUR key IS NOT ACTIVE💔") 
-      print("\033[0;31mThis Tool Is Paid")
+      print(f"\033[0;31mThis Tool Is {R}Paid")
       print("\033[1;32m 3days  150 tk\n 7days  300 tk\n 15days 500 tk")
       nm=input("\033[1;32mYour Name: ")
       print("\033[1;32mHow many days do you want to take it for?")
