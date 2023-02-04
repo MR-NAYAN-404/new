@@ -84,6 +84,14 @@ ta = current.year
 bu = current.month
 ha = current.day
 op = bulan[nTemp]
+P = '\x1b[1;97m' # 
+M = '\033[1;31m' # 
+H = '\033[1;32m' # 
+K = '\x1b[1;97m' # 
+B = '\x1b[1;97m' # 
+U = '\x1b[1;95m' # 
+O = '\x1b[1;97m' # 
+N = '\x1b[0m'    # 
 my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
