@@ -166,7 +166,7 @@ def chk():
   id = "~".join(uuid)
   print("\n\x1b[32;1m  YOUR KEY : \033[94m"+id) 
   try: 
-    httpCaht = requests.get("https://github.com/Kamrul-chowdhury404/Approval/blob/main/approval.txt").text 
+    httpCaht = requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text 
     if id in httpCaht: 
       print("\033[92m  YOUR KEY IS ACTIVE😘........\033[97m")
       msg = str(os.geteuid()) 
@@ -179,7 +179,7 @@ def chk():
       print("\033[0;32mHow many days do you want to take it for?")
       dt=input("DAYS: ")
       print('\033[0;32mYour Request Submitted Please Wait')
-      os.system('xdg-open  https://wa.me/+8801823036358?text=*Hello*%2C%20*MR.KAMRUL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+dt+'*Days*%20*Name*%20'+nm+'*Key*%20*'+id)
+      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.KAMRUL*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*My*%20*Information*I%20*want*%20*For*%20'+dt+'*Days*%20*Name*%20'+nm+'*Key*%20*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
