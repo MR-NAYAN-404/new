@@ -189,7 +189,7 @@ def chk():
       time.sleep(3) 
       pass 
     else: 
-      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*Randim*%20*Tool*My*%2C%20*Name*%20*'+num+'*%20*Day*%20*'+id+'*%20*My*%20*Key*%20*'+id+'*%20*Randim*%20*Tool*')
+      os.system('xdg-open  https://wa.me/+8801615298449?text=*Hello*%2C%20*MR.NAYAN*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*public*%20*clone*'+id)
       time.sleep(3) 
       sys.exit() 
   except: 
