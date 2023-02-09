@@ -206,20 +206,17 @@ chk()
 
 #------------------[ BAGIAN-MENU ]----------------#
 def menu():
-	os.system('clear')
 	banner()
 	print('\033[42m\033[1;31m               [ID INFORMATION]                \033[40m\033[00m')
 	git = "https://github.com/MR-NAYAN-404"
 	ip = requests.get("https://api.ipify.org").text
-	print(f'{h}➥➥➣ID NAME: %s'%(my_name))
-	alvino_xy(f'{u}➥➥➣ID  : '+str(my_id))
 	alvino_xy(f'{h}➥➥➣IP  : {ip}')
 	print(f'{h}➥➥➣ github :'+git)
 	print('\033[42m\033[1;31m                  [MR.NAYAN]                  \033[40m\033[00m')
-	print(f'{h}➥➣2. File Cloning\n➥➥➣0. Remove Cookies')
+	print(f'{h}➥➥➣2. File Cloning\n➥➥➣0. EXIT')
 	_____cowok__pink_____ = input('➥➥➣\033[94mChoosee : ')
 	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
-	if _____cowok__pink_____ in ['p']:
+	if _____cowok__pink_____ in ['i']:
 		dump_massal()
 	elif _____cowok__pink_____ in ['1']:
 		Mr_Nayan_File()
@@ -232,7 +229,7 @@ def menu():
 	elif _____cowok__pink_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print('➥➥➣ COOKIES REMOVE DONE 🥵 ')
+		print('➥➥➣ EXIT 🥵 ')
 		exit()
 	else:
 		print('➥➥➣\033[94mChoosee the Right One ')
@@ -341,8 +338,15 @@ def result():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
+	
 	os.system('clear')
 	banner()
+	
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
 	try:
 		jum = int(input(f'{h}➥➥➣ENTER LIMIT ID?: '))
 	except ValueError:
@@ -521,7 +525,7 @@ def cek_apk(session,coki):
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
 	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
-	print(f'          {m}N {k}A {h}Y {u}A {b}N {u}  🐸  {b}E {u}N {h} J{k} O{m} Y{b}')
+	print(f'          {m}N {k}A {h}Y {u}A {b}N {u}  â˜…  {b}E {u}N {h} J{k} O{m} Y{b}')
 	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
 	print(f'{h}➥➥➣Total {h}Id{u}          : {h}'+str(len(id)))
 	print(f'➥➥➣Result {h}OK{u} Save In : {h}OK/%s {b}'%(okc))
@@ -981,7 +985,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	login()
+	menu()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
