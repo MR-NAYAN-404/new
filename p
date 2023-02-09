@@ -205,7 +205,7 @@ chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
 
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(my_name,my_id):
+def menu():
 	banner()
 	print('\033[42m\033[1;31m               [ID INFORMATION]                \033[40m\033[00m')
 	git = "https://github.com/MR-NAYAN-404"
@@ -985,7 +985,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	login()
+	menu()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
