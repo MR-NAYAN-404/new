@@ -342,10 +342,7 @@ def dump_massal():
 	os.system('clear')
 	banner()
 	
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
+	
 		exit()
 	try:
 		jum = int(input(f'{h}➥➥➣ENTER LIMIT ID?: '))
