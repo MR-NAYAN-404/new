@@ -341,9 +341,6 @@ def dump_massal():
 	
 	os.system('clear')
 	banner()
-	
-	
-		exit()
 	try:
 		jum = int(input(f'{h}➥➥➣ENTER LIMIT ID?: '))
 	except ValueError:
