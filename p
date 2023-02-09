@@ -96,7 +96,7 @@ except IOError:
     kok.close()
     print(key)
 
-a=requests.get("https://github.com/N41M01/6-10/blob/main/Devil.txt").text
+a=requests.get("https://github.com/MR-NAYAN-404/approval/blob/main/approval.txt").text
 b=str(a)
 key1=open("/storage/emulated/0/android8.txt",'r').read()
 key2=str(key1)  
