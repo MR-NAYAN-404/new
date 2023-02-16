@@ -330,9 +330,10 @@ def File():
 		fo = open(file,'r').read().splitlines()
 	except FileNotFoundError:
 		exit(' File location not found ')
-	linex()
-	print(' \033[1;92mSelect Password Crack menu \n\n [1] Crack with auto password \n \n [2] Crack with manual password');linex()
-	cs = input('\n   \x1b[1;33m Choose option >>> ')
+	clear()
+	print('\033[42m\033[1;31m                  [MR.NAYAN ]                  \033[40m\033[00m')
+	print(' \033[1;92mSelect Password Crack menu \n[1] Crack with auto password \n[2] Crack with manual password')
+	cs = input('\n \x1b[1;33mChoose option >>> ')
 	plist=[]
 	if cs in ['y','Y','yes','Yes','1','01']:
 		
@@ -369,11 +370,13 @@ def File():
 	
 	with ThreadPool(max_workers=30) as crack_submit:
 		doamin = ' FILE CLONING '
+		ip = requests.get("https://api.ipify.org").text
 		total_ids = str(len(fo))
 		clear()
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
-		print ("Total Ids :    "+total_ids)
+		print ("\033[92m[\033[37m*\033[92m] \033[37mTotal Ids :    "+total_ids)
+		print('\033[92m[\033[37m*\033[92m] \033[37m IP      : {ip}')
 		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
 		print('\033[92m[\033[37m*\033[92m] \033[37m \033[1;93m NOTE : Fast Airplane Mode [ On/Off ] Be For Use ')
 		print(60*'~')
