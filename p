@@ -373,12 +373,11 @@ def File():
 		print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
 	print(f'          {m}N {k}A {h}Y {u}A {b}N {u}  🔥 {b}E {u}N {h} J{k} O{m} Y{b}')
 	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
-	print(f'{h}➥➥➣Total {h}Id{u}          : {h}'+total_ids)
+	print ("Total Ids = "+total_ids)
 	print(f'➥➥➣Result {h}OK{u} Save In : {h}OK/%s {b}'%(okc))
 	print(f'➥➥➣Result {m}CP{b} Save In : {m}CP/%s {h}'%(cpc))
 	print(f'➥➥➣Airplane Mode on 10 Seconds For {h}1k{u} Idz')
 	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
-		print ("Total Ids = "+total_ids)
 		linex()
 		print("")
 		for user in fo:
