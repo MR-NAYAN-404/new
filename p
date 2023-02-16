@@ -210,10 +210,10 @@ def menu():
 	#lo("\t   LOADING SYSTEM")
 	#clear()
 	
-	print ("\033[1;97m[1]\033[1;33m FILE CLONING ")
+	print ("\033[1;97m[1]\033[1;32m FILE CLONING ")
 	print ("\033[1;97m[2]\033[1;33m RANDOM CLONEING")
-	print ("\033[1;97m[3]\033[1;33m EMAIL CLONEING")
-	print ("\033[1;97m[4]\033[1;33m Owner Facebook ID")
+	print ("\033[1;97m[3]\033[1;31m EMAIL CLONEING")
+	print ("\033[1;97m[4]\033[1;91m Owner Facebook ID")
 	ot = input('\n   \x1b[1;32m Choose option >>> ')
 	if ot == '1':
 		os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
@@ -367,11 +367,15 @@ def File():
 		#plist1=open('first', 'r').read().splitlines()
 	
 	with ThreadPool(max_workers=30) as crack_submit:
+		domain = FILE CLONING
 		total_ids = str(len(fo))
 		clear()
-		
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
+		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
 		print ("Total Ids = "+total_ids)
-		print ("Note : Tools WiFi Working Don't West Your Mobile Data ")
+		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
+		print('\033[92m[\033[37m*\033[92m] \033[37m \033[1;93m NOTE : Fast Airplane Mode [ On/Off ] Be For Use ')
+		print(60*'~')
 		
 		linex()
 		print("")
