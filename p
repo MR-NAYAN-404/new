@@ -367,7 +367,7 @@ def File():
 		#plist1=open('first', 'r').read().splitlines()
 	
 	with ThreadPool(max_workers=30) as crack_submit:
-		domain = FILE CLONING
+		doamin = ' FILE CLONING '
 		total_ids = str(len(fo))
 		clear()
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
