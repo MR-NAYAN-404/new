@@ -369,12 +369,8 @@ def File():
 	with ThreadPool(max_workers=30) as crack_submit:
 		total_ids = str(len(fo))
 		clear()
-	    print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
 	    print ("Total Ids = "+total_ids)
-	    print(f'➥➥➣Result {h}OK{u} Save In : {h}OK/%s {b}'%(okc))
-	    print(f'➥➥➣Result {m}CP{b} Save In : {m}CP/%s {h}'%(cpc))
-	    print(f'➥➥➣Airplane Mode on 10 Seconds For {h}1k{u} Idz')
-	    print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
+		print ("Note : Tools WiFi Working Don't West Your Mobile Data ")
 		linex()
 		print("")
 		for user in fo:
