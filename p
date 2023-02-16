@@ -323,14 +323,15 @@ def mail():
 	exit()
 def File():
 	clear()
-	print(f' \n ➥➥➣\033[42m\033[1;31m Example: /sdcard/nayan.txt\033[40m\033[00m\n')
-	file = input(' Put file path\033[1;37m: ')
+	print(f' \n➥➥➣\033[42m\033[1;31m Example: /sdcard/nayan.txt\033[40m\033[00m\n')
+	file = input('\033[1;92m➥➥➣Put file path\033[1;31m: ')
+	os.system('xdg-open https://github.com/MR-NAYAN-404')
 	try:
 		fo = open(file,'r').read().splitlines()
 	except FileNotFoundError:
 		exit(' File location not found ')
 	linex()
-	print(' Select Password Crack menu \n\n [1] Crack with auto password \n \n [2] Crack with manual password');linex()
+	print(' \033[1;92mSelect Password Crack menu \n\n [1] Crack with auto password \n \n [2] Crack with manual password');linex()
 	cs = input('\n   \x1b[1;33m Choose option >>> ')
 	plist=[]
 	if cs in ['y','Y','yes','Yes','1','01']:
@@ -372,7 +373,7 @@ def File():
 		clear()
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m \033[1;32m NAYAN Premium Mood Activated ")
 		print(f"\033[92m[\033[37m*\033[92m] \033[37m  Tool Name:\033[1;92m {doamin}")
-		print ("Total Ids = "+total_ids)
+		print ("Total Ids :    "+total_ids)
 		print('\033[92m[\033[37m*\033[92m] \033[37m  The process has been started')
 		print('\033[92m[\033[37m*\033[92m] \033[37m \033[1;93m NOTE : Fast Airplane Mode [ On/Off ] Be For Use ')
 		print(60*'~')
@@ -387,6 +388,7 @@ def File():
 	linex()
 	print(' The process has completed')
 	print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+	os.system('xdg-open https://github.com/MR-NAYAN-404')
 	linex()
 	input(' Press enter to back ')
 	menu()
