@@ -369,9 +369,6 @@ def File():
 	with ThreadPool(max_workers=30) as crack_submit:
 		total_ids = str(len(fo))
 		clear()
-		
-		print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
-	    print(f'          {m}N {k}A {h}Y {u}A {b}N {u}  🔥 {b}E {u}N {h} J{k} O{m} Y{b}')
 	    print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
 	    print ("Total Ids = "+total_ids)
 	    print(f'➥➥➣Result {h}OK{u} Save In : {h}OK/%s {b}'%(okc))
