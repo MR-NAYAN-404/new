@@ -332,7 +332,8 @@ def File():
 		exit(' File location not found ')
 	clear()
 	print('\033[42m\033[1;31m                  [MR.NAYAN ]                  \033[40m\033[00m')
-	print(' \033[1;92mSelect Password Crack menu \n[1] Crack with auto password \n[2] Crack with manual password')
+	print('\033[1;92mSelect Password Crack menu \n[1] Crack with auto password \n[2] Crack with manual password')
+	print('\033[42m\033[1;31m                  [MR.NAYAN ]                  \033[40m\033[00m')
 	cs = input('\n \x1b[1;33mChoose option >>> ')
 	plist=[]
 	if cs in ['y','Y','yes','Yes','1','01']:
