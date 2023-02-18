@@ -45,7 +45,9 @@ class Dump_regex:
 		if apa in ["1","01"]:
 			self.os("clear")
 			print(logo)
-			akun = input("[?] target : ")
+			x = int(input("➥➥➣ENTER LIMIT Uid?: : "))
+			for x in range(x):
+				akun = input("➥➥➣ ENTER UID  : ")
 			self.file = input("[!] Enter Your Filename\n[?] Name : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
