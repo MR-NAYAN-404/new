@@ -105,6 +105,6 @@ class Dump_regex:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="See More Friends").get("href"))
 		except Exception as e: print(e)
 		os.system('clear')
-		menu()
+		self.menu()
 		
 Dump_regex().menu()	
