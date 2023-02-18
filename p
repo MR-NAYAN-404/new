@@ -35,7 +35,6 @@ class Dump_regex:
 	def menu(self):
 		self.os("clear")
 		print(logo)
-		print("[!] Your Login Id %s "%(self.nama))
 		try:
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
@@ -45,7 +44,6 @@ class Dump_regex:
 		if apa in ["1","01"]:
 			self.os("clear")
 			print(logo)
-			print("[!] Your Login Id %s "%(self.nama))
 			akun = input("[?] ENTER PUBLIC UID  :  \x1b[1;94m")
 			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan\n[?]\033[1m Name : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
@@ -120,4 +118,4 @@ class Dump_regex:
 		    time.sleep(2)
 		    exit()
 		
-Dump_regex().menu()	
+Dump_regex().self.menu()	
