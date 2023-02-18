@@ -74,16 +74,16 @@ class Dump_regex:
 		try:
 			link = self.ses.get(f"https://mbasic.facebook.com/{self.user}/friends", cookies=self.cok).text
 			if "Tidak Ada Teman Untuk Ditampilkan" in link:
-				exit("[!] daftar teman tidak di publikasikan")
-			elif "Halaman yang Anda minta tidak ditemukan." in link:
-				exit(f"[!] pengguna dengan id {self.user} tidak ditemukan")
-			elif "Anda Tidak Dapat Menggunakan Fitur Ini Sekarang" in link:
-				exit("[!] facebook membatasi setiap aktivitas, limit bro, silahkan beralih akun")
-			elif "Konten Tidak Ditemukan" in link:
-				exit(f"[!] Pengguna Dengan Id {self.user} tidak ditemukan")
+				exit("[!] Friend List Not Published")
+			elif "The page you requested was not found.." in link:
+				exit(f"[!] User With Id {self.user} Not Found")
+			elif "You Cannot Use This Feature Now" in link:
+				exit("[!] Facebook Limits Every Activity, Limit Bro, Please Switch Accounts")
+			elif "Content Not Found" in link:
+				exit(f"[!] User With Id {self.user} Not Found")
 			else: pass
 		except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
-			exit("[!] kesalahan pada koneksi")
+			exit("[!] Connection Error")
 	
 	def dump_publik(self, url):	
 		try:
@@ -94,12 +94,12 @@ class Dump_regex:
 					mentah = re.findall("id\=(.*?)\&",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s        '%(user[1]),end=" ")
+					print(f'\r[!] {len(xxx)} - %s       \n '%(user[1]),end=" ")
 				else:
 					mentah = re.findall("\/(.*?)\?eav",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s        '%(user[1]),end=" ")
+					print(f'\r[!] {len(xxx)} - %s       \n '%(user[1]),end=" ")
 				sys.stdout.flush()
 			if "Lihat Teman Lain" in link:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="Lihat Teman Lain").get("href"))
