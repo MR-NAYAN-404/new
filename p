@@ -54,7 +54,7 @@ class Dump_regex:
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
 		elif apa in ["3","03"]:
 			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
-			back()
+			self.menu()
 		elif apa in ["2","02"]:
 			self.os("clear")
 			print(logo)
