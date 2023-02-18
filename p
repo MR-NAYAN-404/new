@@ -109,7 +109,7 @@ class Dump_regex:
 		if woi in ['y','Y']:
 			os.system('clear')
 			self.menu()
-		else
+		else:
 		    print(f'\t{x}➥➥➣{k} Good Bye Dadahh🥵🥵{u} ')
 		    time.sleep(2)
 		     exit()
