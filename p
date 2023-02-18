@@ -45,6 +45,7 @@ class Dump_regex:
 			self.os("clear")
 			print(logo)
 			akun = input("[?] ENTER PUBLIC UID  :  \x1b[1;94m")
+			print(" Example : Nayan")
 			self.file = input("[!] Enter Your Filename\n[?] Name : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
@@ -58,7 +59,8 @@ class Dump_regex:
 			self.os("clear")
 			print(logo)
 			xx = int(input("➥➥➣ENTER LIMIT Uid?: : "))
-			self.file = input("[!] ➥➥➣Enter Your File Name: \x1b[1;93m")
+			print(" Example : Nayan")
+			self.file = input("[!] Enter Your Filename\n[?] Name : ")
 			self.info_file()
 			for x in range(xx):
 				akun = input("➥➥➣ ENTER UID  : ")
