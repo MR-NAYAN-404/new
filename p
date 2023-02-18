@@ -59,7 +59,7 @@ class Dump_regex:
 			self.file = input("[!] ➥➥➣Enter Your File Name: \x1b[1;93m")
 			self.info_file()
 			for x in range(xx):
-				akun = input("[?] ENTER UID  : \n")
+				akun = input("[?] ENTER UID  : ")
 				if "https" in str(akun): self.user = akun.split("/")[3]
 				else: self.user = akun
 				self.cek_target()
