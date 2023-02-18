@@ -59,7 +59,7 @@ class Dump_regex:
 			self.file = input("[!] ➥➥➣Enter Your File Name: \x1b[1;93m")
 			self.info_file()
 			for x in range(xx):
-				akun = input("[?] ENTER UID  : ")
+				akun = input("➥➥➣ ENTER UID  : ")
 				if "https" in str(akun): self.user = akun.split("/")[3]
 				else: self.user = akun
 				self.cek_target()
@@ -94,12 +94,12 @@ class Dump_regex:
 					mentah = re.findall("id\=(.*?)\&",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s       '%(user[1])'\n',end=" \n")
+					print(f'\r[!] {len(xxx)} - %s       '%(user[1]),end=" \n")
 				else:
 					mentah = re.findall("\/(.*?)\?eav",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s         '%(user[1])'\n',end=" \n")
+					print(f'\r[!] {len(xxx)} - %s         '%(user[1]),end=" \n")
 				sys.stdout.flush()
 			if "Lihat Teman Lain" in link:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="Lihat Teman Lain").get("href"))
