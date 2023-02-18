@@ -96,25 +96,25 @@ class Dump_regex:
 					mentah = re.findall("id\=(.*?)\&",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+" \n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s       '%(user[1]),end=" \n")
+					print(f'\r[!]\033[1m {len(xxx)} - %s       '%(user[1]),end=" \n")
 				else:
 					mentah = re.findall("\/(.*?)\?eav",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s         '%(user[1]),end=" \n")
+					print(f'\r[!]\033[1m {len(xxx)} - %s         '%(user[1]),end=" \n")
 				sys.stdout.flush()
 			if "See More Friends" in link:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="See More Friends").get("href"))
 		except Exception as e: print(e)
 		print("")
 		print("")
-		print('{k}➥➥➣Continue Cracking Back ( Y/n ) ? ')
+		print('\033[1m➥➥➣Continue Cracking Back ( Y/n ) ? ')
 		woi = input('➥➥➣\033[94mChoosee : ')
 		if woi in ['y','Y']:
 			os.system('clear')
 			self.menu()
 		else:
-		    print(f'\t{x}➥➥➣{k} Good Bye Dadahh🥵🥵{u} ')
+		    print(f'\t➥➥➣Good Bye Dadahh🥵🥵')
 		    time.sleep(2)
 		    exit()
 		
