@@ -35,11 +35,12 @@ class Dump_regex:
 		
 	def menu(self):
 		self.os("clear")
+		print(logo)
 		try:
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
 		except: self.login()
-		apa = input(f" - BABAS X {self.nama.upper()} -\n\n[1] dump publik\n[2] dump masal\n[3] keluar\n[?] pilih : ")
+		apa = input(f"\n\n[1] dump publik\n[2] dump masal\n[3] keluar\n[?] pilih : ")
 		print("-"*30)
 		if apa in ["1","01"]:
 			akun = input("[?] target : ")
