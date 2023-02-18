@@ -105,4 +105,4 @@ class Dump_regex:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="Lihat Teman Lain").get("href"))
 		except Exception as e: print(e)
 		
-Dump_regex().menu()	
+Dump_regex()	
