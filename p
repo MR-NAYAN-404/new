@@ -32,7 +32,7 @@ class Dump_regex:
 			open(".cookie.txt","w").write(self.coki)
 		except: exit("[!] invalid")
 		self.nayan()
-def nayan():
+    def nayan():
     os.system('clear')
     print(logo)
     print('\033[1;97m[!]\033[1;33m Start Dump File')
@@ -57,7 +57,7 @@ def nayan():
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
 		except: self.login()
-		apa = input(f"[1] Dump Public\n[2] Dump masal\n[3] Exit Programme\n➥➥➣\033[94mChoosee : ")
+		apa = input(f"[1] Dump Public\n[2] Dump masal\n[3]\033[1;97m[!]\033[1;33m Contact Owner\n[4] Exit Programme\n➥➥➣\033[94mChoosee : ")
 		print("-"*30)
 		if apa in ["1","01"]:
 			self.os("clear")
@@ -69,6 +69,8 @@ def nayan():
 			self.cek_target()
 			self.info_file()
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
+		elif apa in ["3","03"]:
+			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
 		elif apa in ["2","02"]:
 			self.os("clear")
 			print(logo)
@@ -81,7 +83,7 @@ def nayan():
 				else: self.user = akun
 				self.cek_target()
 				self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")
-		elif apa in ["3","03"]: self.os("rm -rf .cookie.txt"); exit()
+		elif apa in ["4","04"]: self.os("rm -rf .cookie.txt"); exit()
 		else: exit()
 	
 	def info_file(self):
