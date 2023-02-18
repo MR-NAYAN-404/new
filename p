@@ -101,8 +101,9 @@ class Dump_regex:
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
 					print(f'\r[!] {len(xxx)} - %s         '%(user[1]),end=" \n")
 				sys.stdout.flush()
-			if "Lihat Teman Lain" in link:
-				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="Lihat Teman Lain").get("href"))
+			if "See More Friends" in link:
+				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="See More Friends").get("href"))
 		except Exception as e: print(e)
+		os.system('clear')
 		
-Dump_regex()	
+Dump_regex().menu()	
