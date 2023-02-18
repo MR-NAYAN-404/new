@@ -25,9 +25,9 @@ class Dump_regex:
 	def login(self):
 		self.os("clear")
 		print(logo)
-		self.coki = input("[?] \033[1mcookie : ")
+		self.coki = input("[?] \033[1mEnter Fresh Cookie : ")
 		try:
-			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
+			self.nama = re.search('name="primary_first_last_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
 			print("[!] Results In %s "%(self.nama))
 			open(".cookie.txt","w").write(self.coki)
 		except: exit("[!] invalid")
@@ -35,6 +35,7 @@ class Dump_regex:
 	def menu(self):
 		self.os("clear")
 		print(logo)
+		print("[!] Your Login Id %s "%(self.nama))
 		try:
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
@@ -44,8 +45,9 @@ class Dump_regex:
 		if apa in ["1","01"]:
 			self.os("clear")
 			print(logo)
+			print("[!] Your Login Id %s "%(self.nama))
 			akun = input("[?] ENTER PUBLIC UID  :  \x1b[1;94m")
-			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan[?]\033[1m Name : ")
+			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan\n[?]\033[1m Name : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
 			self.cek_target()
@@ -58,7 +60,7 @@ class Dump_regex:
 			self.os("clear")
 			print(logo)
 			xx = int(input("➥➥➣ENTER LIMIT Uid?: : "))
-			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan[?]\033[1m Name : ")
+			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan\n[?]\033[1m Name : ")
 			self.info_file()
 			for x in range(xx):
 				akun = input("➥➥➣ ENTER UID  : ")
@@ -68,7 +70,7 @@ class Dump_regex:
 				self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")
 		elif apa in ["4","04"]: self.os("rm -rf .cookie.txt"); exit()
 		else: exit()
-	
+		
 	def info_file(self):
 		print(f"[!] Save File : /sdcard/{self.file}.txt")
 		
