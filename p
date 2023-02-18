@@ -40,19 +40,23 @@ class Dump_regex:
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
 		except: self.login()
-		apa = input(f"\n\n[1] dump publik\n[2] dump masal\n[3] keluar\n[?] pilih : ")
+		apa = input(f"\n\n[1] Dump Public\n[2] Dump masal\n[3] Exit Programme\n[?] Enter : ")
 		print("-"*30)
 		if apa in ["1","01"]:
+			self.os("clear")
+			print(logo)
 			akun = input("[?] target : ")
-			self.file = input("[!] masukan nama file anda \n[?] nama : ")
+			self.file = input("[!] Enter Your Filename\n[?] Name : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
 			self.cek_target()
 			self.info_file()
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
 		elif apa in ["2","02"]:
+			self.os("clear")
+			print(logo)
 			xx = int(input("[!] jumlah : "))
-			self.file = input("[!] masukan nama file anda \n[?] nama : ")
+			self.file = input("[!] Enter Your Filename\n[?] Name : ")
 			self.info_file()
 			for x in range(xx):
 				akun = input("[?] target : ")
