@@ -112,6 +112,6 @@ class Dump_regex:
 		else:
 		    print(f'\t{x}➥➥➣{k} Good Bye Dadahh🥵🥵{u} ')
 		    time.sleep(2)
-		     exit()
+		    exit()
 		
 Dump_regex().menu()	
