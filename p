@@ -94,12 +94,12 @@ class Dump_regex:
 					mentah = re.findall("id\=(.*?)\&",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s      \n\n '%(user[1]),end=" ")
+					print(f'\r[!] {len(xxx)} - %s      \n '%(user[1]),end=" \n")
 				else:
 					mentah = re.findall("\/(.*?)\?eav",user[0])[0]+"|"+user[1]
 					open(f"/sdcard/{self.file}.txt","a").write(str(mentah)+"\n")
 					xxx = open(f"/sdcard/{self.file}.txt","r").read().splitlines()
-					print(f'\r[!] {len(xxx)} - %s       \n\n '%(user[1]),end=" ")
+					print(f'\r[!] {len(xxx)} - %s       \n\n '%(user[1]),end=" \n")
 				sys.stdout.flush()
 			if "Lihat Teman Lain" in link:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="Lihat Teman Lain").get("href"))
