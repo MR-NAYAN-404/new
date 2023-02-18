@@ -104,7 +104,14 @@ class Dump_regex:
 			if "See More Friends" in link:
 				self.dump_publik("https://mbasic.facebook.com"+parser(link, "html.parser").find("a", string="See More Friends").get("href"))
 		except Exception as e: print(e)
-		os.system('clear')
-		self.menu()
+		print('{k}➥➥➣Continue Cracking Back ( Y/n ) ? ')
+		woi = input('➥➥➣\033[94mChoosee : ')
+		if woi in ['y','Y']:
+			os.system('clear')
+			self.menu()
+		else
+		    print(f'\t{x}➥➥➣{k} Good Bye Dadahh🥵🥵{u} ')
+		    time.sleep(2)
+		     exit()
 		
 Dump_regex().menu()	
