@@ -25,7 +25,7 @@ class Dump_regex:
 	def login(self):
 		self.os("clear")
 		print(logo)
-		self.coki = input("[?] \033[1;32;41mcookie : ")
+		self.coki = input("[?] \033[1;32mcookie : ")
 		try:
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
 			print("[!] Results In %s "%(self.nama))
@@ -39,7 +39,7 @@ class Dump_regex:
 			self.cok = {"cookie": open(".cookie.txt","r").read()}
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies=self.cok).text)).group(1)
 		except: self.login()
-		apa = input(f"[1] Dump Public\n[2] Dump masal\n[3]\033[1;97m[!]\033[1;33m Contact Owner\n[4] Exit Programme\n➥➥➣\033[94mChoosee : ")
+		apa = input(f"[1] Dump Public\n[2] Dump masal\n[3]\033[1;32m Contact Owner\n[4] Exit Programme\n➥➥➣\033[94mChoosee : ")
 		print("-"*30)
 		if apa in ["1","01"]:
 			self.os("clear")
@@ -53,6 +53,7 @@ class Dump_regex:
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
 		elif apa in ["3","03"]:
 			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
+			back()
 		elif apa in ["2","02"]:
 			self.os("clear")
 			print(logo)
