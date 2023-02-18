@@ -31,25 +31,7 @@ class Dump_regex:
 			print("[!] Results In %s "%(self.nama))
 			open(".cookie.txt","w").write(self.coki)
 		except: exit("[!] invalid")
-		self.nayan()
-    def nayan():
-    os.system('clear')
-    print(logo)
-    print('\033[1;97m[!]\033[1;33m Start Dump File')
-    print('\033[1;97m[!]\033[1;33m Contact Owner')
-    print('\033[1;97m[!]\033[1;33m Exit')
-    
-    opt = input('[!]\033[1;33m SELECT OPTION: ')
-    if opt =='X':
-        self.menu()
-    if opt =='Y':
-    	os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
-    if opt =='E':
-    	os.system('rm -rf Dump')
-    else:
-        print('\n\033[1;92mChoose valid option\033[0;97m')
-        
-        
+		self.menu()
 	def menu(self):
 		self.os("clear")
 		print(logo)
@@ -135,4 +117,4 @@ class Dump_regex:
 		    time.sleep(2)
 		    exit()
 		
-Dump_regex().nayan()	
+Dump_regex().menu()	
