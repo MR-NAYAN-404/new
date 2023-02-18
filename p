@@ -118,4 +118,4 @@ class Dump_regex:
 		    time.sleep(2)
 		    exit()
 		
-Dump_regex().self.menu()	
+Dump_regex().menu()	
