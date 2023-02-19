@@ -991,7 +991,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	login()
+	self.login()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
