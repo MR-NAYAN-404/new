@@ -1,5 +1,35 @@
 import requests, bs4, re, sys, os
 parser = bs4.BeautifulSoup
+try:
+
+    import requests
+
+except ImportError:
+
+    print('\n [×] Modul requests belum terinstall!...\n')
+
+    os.system('pip install requests')
+
+try:
+
+    import concurrent.futures
+
+except ImportError:
+
+    print('\n [×] Modul Futures belum terinstall!...\n')
+
+    os.system('pip install futures')
+
+try:
+
+    import bs4
+
+except ImportError:
+
+    print('\n [×] Modul Bs4 belum terinstall!...\n')
+
+    os.system('pip install bs4')
+os.system("git pull")
 logo =                                          ("""   
 \033[0;92m╔══════════════════════════════════════════════╗
 \033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
@@ -46,7 +76,7 @@ class Dump_regex:
 			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
 			print(logo)
 			akun = input("[?] ENTER PUBLIC UID  :  \x1b[1;94m")
-			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan\n[?]\033[1m Name : ")
+			self.file = input("[!] Enter Your Filename\n[!]\033[1;33m Example : Nayan\n[?]\033[1m Name : ")
 			self.os("xdg-open https://github.com/MR-NAYAN-404")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
@@ -61,7 +91,7 @@ class Dump_regex:
 			self.os("clear")
 			print(logo)
 			xx = int(input("➥➥➣ENTER LIMIT Uid?: : "))
-			self.file = input("[!] Enter Your Filename\n[!]\033[1;33mExample : Nayan\n[?]\033[1m Name : ")
+			self.file = input("[!] Enter Your Filename\n[!]\033[1;33m Example : Nayan\n[?]\033[1m Name : ")
 			self.os("xdg-open https://github.com/MR-NAYAN-404")
 			self.info_file()
 			for x in range(xx):
