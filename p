@@ -187,18 +187,21 @@ def chk():
     
 chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
-def login():
-		os.system("clear")
+def __init__(self):
+		self.ses = requests.Session()
+		self.os = os.system
+def login(self):
+		self.os("clear")
 		banner()
-		system.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
+		self.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
 		try:
-			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": system.coki}).text)).group(1)
+			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": coki}).text)).group(1)
 			print("[!] Results In %s "%(self.nama))
-			open(".cookie.txt","w").write(system.coki)
+			open(".cookie.txt","w").write(coki)
 		except: exit("[!] invalid")
-		my_name,my_id.menu()
+		self.menu()
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(my_name,my_id):
+def menu(self):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
