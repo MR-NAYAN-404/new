@@ -23,23 +23,7 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #----------------#
-import os
-import time
-os.system('clear')
-print("\033[1;31m TOOL IS OPENING :")
 
-
-animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-animation = ["\033[0;93m[]","\033[0;94m[]", "\033[0;92m[]", "\033[0;91m[]", "\033[0;97m[]", "\033[0;32m[]", "\033[0;94m[]", "\033[0;93m[]", "\033[0;91m[]", "\033[0;92m[]"]
-
-for i in range(len(animation)):
-    time.sleep(1)
-    sys.stdout.write("\r" + animation[i % len(animation)])
-    sys.stdout.flush()
-
-
-os.system("xdg-open https://github.com/MR-NAYAN-404")
-time.sleep(1)
 #------------------[ USER-AGENT ]-------------------#
 ugen2=[]
 ugen=[]
