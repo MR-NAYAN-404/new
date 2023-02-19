@@ -23,7 +23,23 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #----------------#
+import os
+import time
+os.system('clear')
+print("\033[1;31m TOOL IS OPENING :")
 
+
+animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+animation = ["\033[0;93m[]","\033[0;94m[]", "\033[0;92m[]", "\033[0;91m[]", "\033[0;97m[]", "\033[0;32m[]", "\033[0;94m[]", "\033[0;93m[]", "\033[0;91m[]", "\033[0;92m[]"]
+
+for i in range(len(animation)):
+    time.sleep(1)
+    sys.stdout.write("\r" + animation[i % len(animation)])
+    sys.stdout.flush()
+
+
+os.system("xdg-open https://github.com/MR-NAYAN-404")
+time.sleep(1)
 #------------------[ USER-AGENT ]-------------------#
 ugen2=[]
 ugen=[]
@@ -187,21 +203,44 @@ def chk():
     
 chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
-def __init__(self):
-		self.ses = requests.Session()
-		self.os = os.system
 def login():
-		self.os("clear")
-		banner()
-		self.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
 		try:
-			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": coki}).text)).group(1)
-			print("[!] Results In %s "%(self.nama))
-			open(".cookie.txt","w").write(coki)
-		except: exit("[!] invalid")
-		self.menu()
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+			lo = mark(li, style='red')
+			sol().print(lo, style='purple')
+			exit()
+	except IOError:
+		login_lagi334()
+def login_lagi334():
+	try:
+		os.system('clear')
+		banner()
+		asu = random.choice([m,k,h,b,u])
+		cookie=input(f'  [{h}•{u}] Enter  Fresh Cookies :{asu} ')
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1))
+		cok=open(".cok.txt", "w").write(cookie)
+		print(f'  {u}[{h}•{u}]{h} LOGIN SuccessFull😍\n. {u}[{h}•{u}]{h} Type: python PBLC-FL.py\n  {u}[{h}•{u}]{h} Press Enter{k} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN FAILED🥵...YOUR COOKIES  HAS BEEN EXPIRED !!%s'%(x,k,x,m,x))
+		exit()
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(self):
+def menu(my_name,my_id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
