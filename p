@@ -203,16 +203,16 @@ def chk():
     
 chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
-def login(self):
-		self.os("clear")
+def login():
+		os.system("clear")
 		print(logo)
-		self.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
+		system.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
 		try:
-			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
+			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": system.coki}).text)).group(1)
 			print("[!] Results In %s "%(self.nama))
-			open(".cookie.txt","w").write(self.coki)
+			open(".cookie.txt","w").write(system.coki)
 		except: exit("[!] invalid")
-		self.menu()
+		my_name,my_id.menu()
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
@@ -1004,7 +1004,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	self.login()
+	login()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
