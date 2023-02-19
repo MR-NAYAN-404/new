@@ -190,7 +190,7 @@ chk()
 def __init__(self):
 		self.ses = requests.Session()
 		self.os = os.system
-def login(self):
+def login():
 		self.os("clear")
 		banner()
 		self.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
@@ -991,7 +991,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	login(self)
+	login()
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
