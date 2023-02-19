@@ -204,7 +204,7 @@ def chk():
 chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
-		self.os("clear")
+		os.system("clear")
 		print(logo)
 		self.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
 		try:
