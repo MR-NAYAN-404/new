@@ -58,7 +58,7 @@ class Dump_regex:
 			self.os("clear")
 			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
 			print(logo)
-			akun = input("[?] ENTER PUBLIC UID  :  \x1b[1;94m")
+			akun = input("[?] ENTER PUBLIC UID  :  ")
 			self.file = input("[!] Enter Your Filename\n[!]\033[1;33m Example : Nayan\n[?]\033[1m Name : ")
 			self.os("xdg-open https://github.com/MR-NAYAN-404")
 			if "https" in str(akun): self.user = akun.split("/")[3]
@@ -73,7 +73,7 @@ class Dump_regex:
 			self.os("xdg-open https://www.facebook.com/profile.php?id=100008255177183")
 			self.os("clear")
 			print(logo)
-			xx = int(input("➥➥➣ENTER LIMIT Uid?: : "))
+			xx = int(input("➥➥➣ENTER LIMIT Uid? : "))
 			self.file = input("[!] Enter Your Filename\n[!]\033[1;33m Example : Nayan\n[?]\033[1m Name : ")
 			self.os("xdg-open https://github.com/MR-NAYAN-404")
 			self.info_file()
