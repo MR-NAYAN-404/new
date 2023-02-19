@@ -189,7 +189,7 @@ chk()
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 		os.system("clear")
-		print(logo)
+		banner()
 		system.coki = input("[?] \033[1mEnter Fresh Cookie\033[1;33m : ")
 		try:
 			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": system.coki}).text)).group(1)
