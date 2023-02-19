@@ -7,7 +7,7 @@ try:
     from requests.exceptions import ConnectionError
 except ModuleNotFoundError:
     os.system('pip install mechanize requests futures==2 > /dev/null')
-    os.system('python Pro07.py')
+    os.system('git pul')
 from bs4 import BeautifulSoup
 from datetime import date
 from datetime import datetime
@@ -129,6 +129,11 @@ class Dump_regex:
 		woi = input('➥➥➣\033[94mChoosee : ')
 		if woi in ['y','Y']:
 			os.system('clear')
+			self.menu()
+		else:
+			print(f'\t➥➥➣Good Bye Dadahh🥵🥵 ')
+			time.sleep(2)
+			self.os("clear")
 			self.menu()
 		
 Dump_regex().menu()	
