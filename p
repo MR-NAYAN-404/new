@@ -78,7 +78,7 @@ class Dump_regex:
 			self.os("xdg-open https://github.com/MR-NAYAN-404")
 			self.info_file()
 			for x in range(xx):
-				akun = input("➥➥➣ ENTER UID  : ")
+				akun = input("➥➥➣\033[0;92m ENTER UID  : ")
 				if "https" in str(akun): self.user = akun.split("/")[3]
 				else: self.user = akun
 				self.cek_target()
@@ -132,7 +132,6 @@ class Dump_regex:
 			self.menu()
 		else:
 			print(f'\t➥➥➣Good Bye Dadahh🥵🥵 ')
-			time.sleep(2)
 			self.os("clear")
 			self.menu()
 		
