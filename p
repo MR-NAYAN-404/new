@@ -27,7 +27,7 @@ class Dump_regex:
 		print(logo)
 		self.coki = input("[?] \033[1mEnter Fresh Cookie : ")
 		try:
-			self.nama = re.search('name="primary_first_last_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
+			self.nama = re.search('name="primary_first_name" value="(.*?)"',str(self.ses.get("https://m.facebook.com/settings/account/?name&refresh_on_back=1&refid=70",cookies={"cookie": self.coki}).text)).group(1)
 			print("[!] Results In %s "%(self.nama))
 			open(".cookie.txt","w").write(self.coki)
 		except: exit("[!] invalid")
