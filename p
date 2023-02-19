@@ -235,8 +235,7 @@ def login_lagi334():
 		print(f'  {u}[{h}•{u}]{h} LOGIN SuccessFull😍\n. {u}[{h}•{u}]{h} Type: python PBLC-FL.py\n  {u}[{h}•{u}]{h} Press Enter{k} ');time.sleep(1)
 		exit()
 	except Exception as e:
-		os.system("rm -f .token.txt")
-		os.system("rm -f .cok.txt")
+		
 		print(f'  %s[%sx%s]%s LOGIN FAILED🥵...YOUR COOKIES  HAS BEEN EXPIRED !!%s'%(x,k,x,m,x))
 		exit()
 #------------------[ BAGIAN-MENU ]----------------#
