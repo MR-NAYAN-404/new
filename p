@@ -1,35 +1,18 @@
 import requests, bs4, re, sys, os
 parser = bs4.BeautifulSoup
 try:
-
     import requests
-
-except ImportError:
-
-    print('\n [×] Modul requests belum terinstall!...\n')
-
-    os.system('pip install requests')
-
-try:
-
-    import concurrent.futures
-
-except ImportError:
-
-    print('\n [×] Modul Futures belum terinstall!...\n')
-
-    os.system('pip install futures')
-
-try:
-
-    import bs4
-
-except ImportError:
-
-    print('\n [×] Modul Bs4 belum terinstall!...\n')
-
-    os.system('pip install bs4')
-os.system("git pull")
+    from concurrent.futures import ThreadPoolExecutor as ThreadPool
+    import mechanize
+    from requests.exceptions import ConnectionError
+except ModuleNotFoundError:
+    os.system('pip install mechanize requests futures==2 > /dev/null')
+    os.system('python Pro07.py')
+from bs4 import BeautifulSoup
+from datetime import date
+from datetime import datetime
+from time import sleep
+from time import sleep as waktu
 logo =                                          ("""   
 \033[0;92m╔══════════════════════════════════════════════╗
 \033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
