@@ -1,4 +1,4 @@
-import urllib2, json, time
+import json, time
 from random import randint
 import sys
 
