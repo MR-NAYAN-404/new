@@ -2,7 +2,21 @@ import re,requests,bs4,json,os,sys
 from bs4 import BeautifulSoup as parser
 ses=requests.Session()
 n,cok,cookie=0,[],[]
-
+os.system('clear')
+def main():
+	os.system('clear')
+    print(logo)
+    print('')
+    print ('\033[0;95mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\033[1;92mâ•‘\x1b[1;92m\x1b[1;45mMR.NAYAN\033[0;m\x1b[1;92mâ•‘â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•')
+    print('\033[1;97m |\033[1;92m01\033[1;97m| START RANDOM CRACK')
+    print('\033[1;97m |\033[1;92m01\033[1;97m| START RANDOM CRACK')
+    opt = input('[!]\033[1;33m SELECT OPTION: ')
+    if opt =='1':
+        cok()
+     if opt =='2':
+        random_crack()
+    else:
+        print('\n\033[1;92mChoose valid option\033[0;97m')
 def logo():
 	print ("""
 
@@ -31,21 +45,22 @@ print ("""
 \033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝               
 
  """)
-
-url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
-for z in url("span"):
-	cok.append(z.text)
-for x in "".join(cok).split("datr"):
-	cok = f"datr{x}"
-	if cok in cookie:
-		pass
-	else:
-		if "Beranda" in cok:
+def cok():
+	f
+	url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+	for z in url("span"):
+		cok.append(z.text)
+	for x in "".join(cok).split("datr"):
+		cok = f"datr{x}"
+		if cok in cookie:
 			pass
 		else:
-			n+=1
-			cookie.append(cok)
-			print(f"\033[1;36m{n}🤟\x1b[1;92mCOOKIE💥:         \033[1;35m{cok}\n")
+			if "Beranda" in cok:
+				pass
+			else:
+				n+=1
+				cookie.append(cok)
+				print(f"\033[1;36m{n}🤟\x1b[1;92mCOOKIE💥:         \033[1;35m{cok}\n")
 			
 ask = input("\033[1;33mINPUT COOKIE NO : ")
 os.system('clear')
