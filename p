@@ -1,9 +1,70 @@
-import requests,os,time
+import re,requests,bs4,json,os,sys
+from bs4 import BeautifulSoup as parser
+ses=requests.Session()
+n,cok,cookie=0,[],[]
+
+def logo():
+	print ("""
 
 
+\033[1;32m COPY YOUR COOKIE
 
-number=str(input("Enter Your Number : "))
+\033[1;35m BYE ALLAH HAFEZ
+ """)
+os.system('clear')
+os.system('xdg-open fb://group/3473801536235620?ref=share&mibextid=NSMWBT')
+def logo():
+    print ("""
+\033[0;92m╔══════════════════════════════════════════════╗
+\033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
+\033[0;32m║ ████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██\033[0;92m ║
+\033[0;32m║ ██ ██  ██ \033[0;31m███████   \033[0;93m████   \033[0;32m███████ \033[0;31m██ ██  ██\033[0;92m ║
+\033[0;32m║ ██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██  ██ ██\033[0;92m ║
+\033[0;92m║ ██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██   ████\033[0;92m ║
+\033[0;92m╚══════════════════════════════════════════════╝
+\033[0;92m╔═══════════════════════════════════════════╗\033[0;92m╔═══╗
+\033[0;92m║➣\033[0;31m DEVOLPER   :   \033[0;34m       MR. NAYAN          ║\033[0;32m║\033[1;31m N \033[1;32m║
+\033[0;92m║➣\033[0;33m FACEBOOK   :    \033[0;35m      Mohammad Nayan     ║\033[0;32m║\033[1;312m A\033[0;92m ║
+\033[0;92m║═══════════════════════════════════════════║\033[0;32m║\033[1;34m Y\033[0;92m ║
+\033[0;92m║➣\033[0;91m WHATSAPP   :    \033[0;92m      01615298449        ║\033[0;32m║\033[1;93m A\033[0;92m ║
+\033[0;92m║➣\033[0;93m GITHUB     :     \033[0;94m     MR-NAYAN-404       ║\033[0;92m║\033[1;92m N\033[0;92m ║
+\033[0;92m║➣\033[0;94m TOOLS      :      \033[0;93m    Public Tool        ║\033[0;92m║ 😘║
+\033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝               
 
-api="https://api.mr999plus.xyz/aiovd"+number
+ """)
+os.system('clear')
+print(logo)
+url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+for z in url("span"):
+	cok.append(z.text)
+for x in "".join(cok).split("datr"):
+	cok = f"datr{x}"
+	if cok in cookie:
+		pass
+	else:
+		if "Beranda" in cok:
+			pass
+		else:
+			n+=1
+			cookie.append(cok)
+			print(f"\033[1;36m{n}>>\x1b[1;92mCOOKIE💥=                                                                                                                                                                                                                                                                                                                     \033[1;35m{cok}\n")
+		
+ask = input("\033[1;33mINPUT COOKIE NO : ")
+os.system('clear')
+os.system('xdg-open https://www.facebook.com/inrojit.das')
+print ("""
 
-requests.get(api)
+\033[0;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██
+\033[0;32m████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██
+\033[0;32m██ ██  ██ \033[0;31m███████   \033[0;93m████   \033[0;32m███████ \033[0;31m██ ██  ██
+\033[0;32m██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██  ██ ██
+\033[0;92m██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██   ████
+\033[1;32m══════════════════════════════════════════════════════ """)
+print("\033[1;35m\t\tCOPY YOUR COOKIE\n ")
+print("\033[1;35m\t\tTHANKS USING OUR TOOLS\n  ")
+
+print ("\033[1;32m══════════════════════════════════════════════════════ ")
+
+print(cookie[int(ask)-1])
+
+logo()
