@@ -161,6 +161,7 @@ for x in "".join(cok).split("datr"):
 ask = input("\033[1;33mINPUT COOKIE NO : ")
 os.system('clear')
 os.system('xdg-open https://github.com/MR-NAYAN-404')
+wa = random.choice(my_color)
 print ("""\t\t
 
      \033[1;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[1;31m███    ██
