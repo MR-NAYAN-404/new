@@ -103,7 +103,7 @@ class Loader:
 
     def stop(self):
         self.done = True
-        cols = get_terminal_size((70, 10)).columns
+        cols = get_terminal_size((120, 60)).columns
         print("\r" + " " * cols, end="", flush=True)
         print(f"\r{self.end}", flush=True)
 
