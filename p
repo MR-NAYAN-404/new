@@ -162,7 +162,7 @@ ask = input("\033[1;33mINPUT COOKIE NO : ")
 os.system('clear')
 os.system('xdg-open https://github.com/MR-NAYAN-404')
 wa = random.choice(my_color)
-print ("""\t\t
+print ("""
 
      \033[1;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[1;31m███    ██
      \033[1;32m████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[1;31m████   ██
@@ -173,8 +173,8 @@ print ("""\t\t
 print("\033[1;35m\t\tCOPY YOUR COOKIE\n ")
 print("\033[1;35m\t\tTHANKS USING OUR TOOLS\n  ")
 
-print ("\033[1;32m══════════════════════════════════════════════════════ \n{wa}")
-
-print(cookie[int(ask)-1])
+print ("\033[1;32m══════════════════════════════════════════════════════ \n")
+wa = random.choice(my_color)
+print('{wa}'cookie[int(ask)-1])
 
 logo()
