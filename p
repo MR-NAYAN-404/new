@@ -112,11 +112,11 @@ class Loader:
 
 
 if __name__ == "__main__":
-    with Loader("Loading This Tool..."):
+    with Loader("\033[1;32mLoading This Tool..."):
         for i in range(10):
             sleep(0.25)
 
-    loader = Loader("Tool Opening Plz W8🥰.", "Loading Done💥!", 0.111).start()
+    loader = Loader("\033[1;32mTool Opening Plz W8🥰.", "\033[1;32mLoading Done💥!", 0.111).start()
     for i in range(10):
         sleep(0.70)
     loader.stop()
@@ -155,12 +155,12 @@ for x in "".join(cok).split("datr"):
 			n+=1
 			cookie.append(cok)
 			wa = random.choice(my_color)
-			print(f"\033[1;36m{n}🤟\x1b[1;92mCOOKIE💥:  {wa}{cok}\n")
+			print(f"{wa}{n}<>\x1b[1;92mCOOKIE💥:  {wa}{cok}\n")
 			
 ask = input("\033[1;33mINPUT COOKIE NO : ")
 os.system('clear')
 os.system('xdg-open https://github.com/MR-NAYAN-404')
-print ("""
+print ("""\t\t
 
 \033[1;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[1;31m███    ██
 \033[1;32m████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[1;31m████   ██
