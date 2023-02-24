@@ -64,13 +64,13 @@ def logo():
 
 
 \033[1;32m COPY YOUR COOKIE
-
-\033[1;35m BYE ALLAH HAFEZ
 \033[1;31m Assalamualaikum🥰
+\033[1;35m BYE ALLAH HAFEZ
+
  """)
 os.system('clear')
 class Loader:
-    def __init__(self, desc="Loading...", end="Done!", timeout=0.1):
+    def __init__(self, desc="Loading...", end="Done!", timeout=0.10):
         """
         A loader-like context manager
 
@@ -103,7 +103,7 @@ class Loader:
 
     def stop(self):
         self.done = True
-        cols = get_terminal_size((120, 60)).columns
+        cols = get_terminal_size((80, 20)).columns
         print("\r" + " " * cols, end="", flush=True)
         print(f"\r{self.end}", flush=True)
 
@@ -172,7 +172,7 @@ print ("""\t\t
 print("\033[1;35m\t\tCOPY YOUR COOKIE\n ")
 print("\033[1;35m\t\tTHANKS USING OUR TOOLS\n  ")
 
-print ("\033[1;32m══════════════════════════════════════════════════════ \n")
+print ("\033[1;32m══════════════════════════════════════════════════════ \n{wa}")
 
 print(cookie[int(ask)-1])
 
