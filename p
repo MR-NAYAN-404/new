@@ -64,7 +64,7 @@ if __name__ == "__main__":
         for i in range(10):
             sleep(0.25)
 
-    loader = Loader("Loading with object...", "Tool Opening Plz W8💦!", 1).start()
+    loader = Loader("Tool Opening Plz W8🥰.", "Loading Done💥!", 0.111).start()
     for i in range(10):
         sleep(0.70)
     loader.stop()
