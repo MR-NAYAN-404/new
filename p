@@ -173,7 +173,7 @@ print ("""
 print("\033[1;35m\t\tCOPY YOUR COOKIE\n ")
 print("\033[1;35m\t\tTHANKS USING OUR TOOLS\n  ")
 wa = random.choice(my_color)
-print ("\033[1;32m══════════════════════════════════════════════════════ \n{wa}")
+print (f"\033[1;32m══════════════════════════════════════════════════════ \n{wa}")
 
 print(cookie[int(ask)-1])
 
