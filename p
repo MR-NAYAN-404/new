@@ -49,7 +49,7 @@ BH = '\x1b[1;102m' # BELAKANG HIJAU
 BM = '\x1b[1;101m' # BELAJANG MERAH
 BA = '\x1b[1;100m' # BELAKANG ABU ABU
 my_color = [
- P, M, H, K, B, U, O, N]
+ M, H, K, B, U, O, N, A, BN]
 warna = random.choice(my_color)
 warna1 = random.choice(my_color)
 warna2 = random.choice(my_color)
