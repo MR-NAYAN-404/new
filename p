@@ -121,7 +121,6 @@ if __name__ == "__main__":
     for i in range(10):
         sleep(0.70)
     loader.stop()
-os.system('clear')
 os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 print ("""
 \033[0;92m╔══════════════════════════════════════════════╗
@@ -170,8 +169,8 @@ print ("""
      \033[1;32m██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[1;31m██  ██ ██
      \033[1;92m██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[1;31m██   ████
 \033[1;32m══════════════════════════════════════════════════════ """)
-print(f"{wa}\t\tCOPY YOUR COOKIE\n ")
-print(f"{wa}\t\tTHANKS USING OUR TOOLS\n  ")
+print(f"\033[1;32m\t\tCOPY YOUR COOKIE\n ")
+print(f"\033[1;32m\t\tTHANKS USING OUR TOOLS\n  ")
 wa = random.choice(my_color)
 print (f"\033[1;32m══════════════════════════════════════════════════════ \n{wa}")
 
