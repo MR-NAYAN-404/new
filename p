@@ -66,6 +66,7 @@ def logo():
 \033[1;32m COPY YOUR COOKIE
 
 \033[1;35m BYE ALLAH HAFEZ
+\033[1;31m Assalamualaikum🥰
  """)
 os.system('clear')
 class Loader:
@@ -102,7 +103,7 @@ class Loader:
 
     def stop(self):
         self.done = True
-        cols = get_terminal_size((100, 40)).columns
+        cols = get_terminal_size((70, 10)).columns
         print("\r" + " " * cols, end="", flush=True)
         print(f"\r{self.end}", flush=True)
 
