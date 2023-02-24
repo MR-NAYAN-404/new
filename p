@@ -68,7 +68,7 @@ if __name__ == "__main__":
     for i in range(10):
         sleep(0.70)
     loader.stop()
-os.system('xdg-open fb://group/3473801536235620?ref=share&mibextid=NSMWBT')
+os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 print ("""
 \033[0;92m╔══════════════════════════════════════════════╗
 \033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
@@ -105,7 +105,7 @@ for x in "".join(cok).split("datr"):
 			
 ask = input("\033[1;33mINPUT COOKIE NO : ")
 os.system('clear')
-os.system('xdg-open https://www.facebook.com/inrojit.das')
+os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 print ("""
 
 \033[0;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██
