@@ -140,27 +140,27 @@ print ("""
 \033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝               
 
  """)
-
-url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
-for z in url("span"):
-	cok.append(z.text)
-for x in "".join(cok).split("datr"):
-	cok = f"datr{x}"
-	if cok in cookie:
-		pass
-	else:
-		if "Beranda" in cok:
+def nayan():
+	url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+	for z in url("span"):
+		cok.append(z.text)
+	for x in "".join(cok).split("datr"):
+		cok = f"datr{x}"
+		if cok in cookie:
 			pass
 		else:
-			n+=1
-			cookie.append(cok)
-			wa = random.choice(my_color)
-			print(f"\033[1;36m{n}🤟\x1b[1;92mCOOKIE💥:  {wa}{cok}\n")
+			if "Beranda" in cok:
+				pass
+			else:
+				n+=1
+				cookie.append(cok)
+				wa = random.choice(my_color)
+				print(f"\033[1;36m{n}🤟\x1b[1;92mCOOKIE💥:  {wa}{cok}\n")
 			
-ask = input("\033[1;33mINPUT COOKIE NO : ")
-os.system('clear')
-os.system('xdg-open https://github.com/MR-NAYAN-404')
-print ("""
+	ask = input("\033[1;33mINPUT COOKIE NO : ")
+	os.system('clear')
+	os.system('xdg-open https://github.com/MR-NAYAN-404')
+	print ("""
 
 \033[0;32m███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██
 \033[0;32m████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██
