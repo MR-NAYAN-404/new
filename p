@@ -1,4 +1,4 @@
-import re,requests,bs4,json,os,sys
+import re,requests,bs4,json,os,sys,random
 from bs4 import BeautifulSoup as parser
 from itertools import cycle
 from shutil import get_terminal_size
