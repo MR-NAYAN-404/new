@@ -124,12 +124,12 @@ def bot_share():
 {P2} You Id          : {id}
 {P2} You Ip          : {ip}
 {P2} Current Date    : {hari}, {tanggal}''',title=f'{P2} {H2}[ {P2}Informasi Pengguna {H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, copy link postingan harus dari facebook lite jika tidak akan terjadi eror saat proses bot share berjalan.',title=f'{P2} {H2}[ {P2}Catatan {H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2} LINK POSTINGAN',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
+	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Catatan {H2}]',subtitle_align='left',padding=1,style='blue'))
+	cetak(nel(f'{P2} Enter Post Link💥',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
 	link = input(f"{P}   └──> : {H}")
-	cetak(nel(f'{P2} JUMLAH SHARE',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
+	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
 	jumlah = int(input(f"{P}   └──> : {H}"))
-	cetak(nel(f'{P2} AUTO SHARE SEDANG BERJALAN',subtitle=f'{P2}┌─',subtitle_align='left',width=29,padding=0,style='blue'))
+	cetak(nel(f'{P2} AUTO SHARE IS RUNNING',subtitle=f'{P2}┌─',subtitle_align='left',width=29,padding=0,style='blue'))
 	basariganteng = datetime.now()
 	try:
 		n = 0
@@ -143,9 +143,9 @@ def bot_share():
 				print(f'{P}\r   └──> {bas} Berhasil Membagikan {H}{n}{P} Postingan {N} ',end='');sys.stdout.flush()
 			else:
 				print("\n")
-				cetak(nel(f'{P2} AUTO SHARE BERHENTI KEMUNGKINAN COOKIE INVALID',width=35,padding=0,style='red'));exit()
+				cetak(nel(f'{P2} AUTO SHARE STOP POSSIBILITY OF INVALID COOKIES',width=35,padding=0,style='red'));exit()
 	except requests.exceptions.ConnectionError:
-		print(f"\n{P}(!) Anda tidak terhubung ke internet!");exit()
+		print(f"\n{P}(!) You are not connected to the internet!");exit()
 bot_share()
 
 
