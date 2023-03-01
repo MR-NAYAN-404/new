@@ -77,7 +77,7 @@ kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
 def nayan():
 	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
-	
+	bot_share()
 ###----------[ INI LOGO ]----------###	
 def logo_menu():
  li = '# WELCOME TO FACEBOOKS AUTO SHARE TOOLS'
