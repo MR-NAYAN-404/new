@@ -76,20 +76,23 @@ ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_v
 kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
 def logo_menu():
- li = '# SELAMAT DATANG DI TOOLS AUTO SHARE FACEBOOK'
+ li = '# WELCOME TO FACEBOOKS AUTO SHARE TOOLS'
  lo = mark(li, style='white')
  sol().print(lo, style='blue')
- banner = f'''    _  _   _ _____ ___    ___ _  _   _   ___ ___ 
-   /_\| | | |_   _/ _ \  / __| || | /_\ | _ \ __|
-  / _ \ |_| | | || (_) | \__ \ __ |/ _ \|   / _| 
- /_/ \_\___/  |_| \___/  |___/_||_/_/ \_\_|_\___|'''
- cetak(nel(banner,title=f'{P2} {H2}[ {P2}>< {H2}]',subtitle_align='left',padding=1,style='blue'))
+ banner = f'''
+███    ██  █████  ██    ██  █████  ███    ██ 
+████   ██ ██   ██  ██  ██  ██   ██ ████   ██ 
+██ ██  ██ ███████   ████   ███████ ██ ██  ██ 
+██  ██ ██ ██   ██    ██    ██   ██ ██  ██ ██ 
+██   ████ ██   ██    ██    ██   ██ ██   ████            
+'''
+ cetak(nel(banner,title=f'{P2} {H2}[ {P2}>< {H2}]',subtitle_align='left',padding=1,style='green'))
 	
 ###----------[ MENU LOGIN ]----------###	
 def login():
 	os.system("clear")
 	cetak(nel(f'           {P2}Login Cookies First Bro\n\n            {H2}--[ MOHAMMAD NAYAN ]--',title=f'{P2} {H2}[ {P2}Assalamualaikum{H2}]',width=54,padding=(1,4),style='blue'))
-	cetak(nel(f'{P2} Enter Fresh Cookies',subtitle=f'{P2}┌─[ Cookies ]',subtitle_align='left',width=54,padding=1,style='blue'))
+	cetak(nel(f'{P2} Enter Fresh Cookies',subtitle=f'{P2}┌─[ Cookies ]',subtitle_align='left',width=54,padding=1,style='green'))
 	cookie = input(f"{P}   └──> : {H}")
 	try:
 		data = ses.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie})
@@ -121,10 +124,10 @@ def bot_share():
 	os.system('clear')
 	logo_menu()
 	cetak(nel(f'''{P2} User Active     : {H2}{nama} 
-{P2} You Id          : {id}
-{P2} You Ip          : {ip}
-{P2} Current Date    : {hari}, {tanggal}''',title=f'{P2} {H2}[ {P2}Informasi Pengguna {H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Catatan {H2}]',subtitle_align='left',padding=1,style='blue'))
+{P2} You Id          : {H2}{id}
+{P2} You Ip          : {H2}{ip}
+{P2} Current Date    :{H2} {hari}, {H2}{tanggal}''',title=f'{P2} {H2}[ {P2}User Information{H2}]',subtitle_align='left',padding=1,style='blue'))
+	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Notes{H2}]',subtitle_align='left',padding=1,style='blue'))
 	cetak(nel(f'{P2} Enter Post Link💥',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
 	link = input(f"{P}   └──> : {H}")
 	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
@@ -140,12 +143,13 @@ def bot_share():
 			data = json.loads(post)
 			if "id" in post:
 				bas = str(datetime.now()-basariganteng).split('.')[0]
-				print(f'{P}\r   └──> {bas} Berhasil Membagikan {H}{n}{P} Postingan {N} ',end='');sys.stdout.flush()
+				print(f'{P}\r   └──> {bas} Successful Sharing{H}{n}{P} post {N} ',end='');sys.stdout.flush()
 			else:
 				print("\n")
 				cetak(nel(f'{P2} AUTO SHARE STOP POSSIBILITY OF INVALID COOKIES',width=35,padding=0,style='red'));exit()
 	except requests.exceptions.ConnectionError:
 		print(f"\n{P}(!) You are not connected to the internet!");exit()
+		
 bot_share()
 
 
