@@ -127,7 +127,7 @@ def bot_share():
 {P2} You Id          : {H2}{id}
 {P2} You Ip          : {H2}{ip}
 {P2} Current Date    :{H2} {hari}, {H2}{tanggal}''',title=f'{P2} {H2}[ {P2}User Information{H2}]',subtitle_align='left',padding=1,style='blue'))
-	cetak(nel(f'{P2}Hai {H2}{nama}{P2}, Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Notes{H2}]',subtitle_align='left',padding=1,style='blue'))
+	cetak(nel(f'{M2}Hai {H2}{nama}{P2}, {M2}Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Notes{H2}]',subtitle_align='left',padding=1,style='blue'))
 	cetak(nel(f'{P2} Enter Post Link💥',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
 	link = input(f"{P}   └──> : {H}")
 	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
