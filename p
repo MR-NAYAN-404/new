@@ -154,6 +154,6 @@ def bot_share():
 	except requests.exceptions.ConnectionError:
 		print(f"\n{P}(!) You are not connected to the internet!");exit()
 		
-bot_share(); nayan()
+nayan()
 
 
