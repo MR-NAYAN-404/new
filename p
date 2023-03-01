@@ -76,8 +76,8 @@ ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_v
 kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
 def nayan():
-	jalan('Thanks For Using Tool')
-	jalan('Assalamualaikum\nbye')
+	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
+	
 ###----------[ INI LOGO ]----------###	
 def logo_menu():
  li = '# WELCOME TO FACEBOOKS AUTO SHARE TOOLS'
