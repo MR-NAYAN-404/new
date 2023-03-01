@@ -75,6 +75,10 @@ ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv
 ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb])
 kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
+def nayan():
+	jalan('Thanks For Using Tool')
+	jalan('Assalamualaikum\nbye')
+###----------[ INI LOGO ]----------###	
 def logo_menu():
  li = '# WELCOME TO FACEBOOKS AUTO SHARE TOOLS'
  lo = mark(li, style='white')
@@ -144,13 +148,12 @@ def bot_share():
 			if "id" in post:
 				bas = str(datetime.now()-basariganteng).split('.')[0]
 				print(f'{P}\r   └──> {bas} Successful Sharing{H}{n}{P} post {N} ',end='');sys.stdout.flush()
-				exit()
 			else:
 				print("\n")
 				cetak(nel(f'{P2} AUTO SHARE STOP POSSIBILITY OF INVALID COOKIES',width=35,padding=0,style='red'));exit()
 	except requests.exceptions.ConnectionError:
 		print(f"\n{P}(!) You are not connected to the internet!");exit()
 		
-bot_share()
+bot_share(); nayan()
 
 
