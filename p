@@ -106,6 +106,29 @@ def login():
 		cetak(nel(f'{P2} COOKIE INVALID',width=22,style=f"#00FF00"));time.sleep(1.5) 
 		login()
 		
+def main():
+	os.system('clear')
+	print(f'{h}âž¥âž¥âž£1. Crack Public\nâž¥âž¥âž£2. File Cloning\nâž¥âž¥âž£0. Remove Cookies')
+	_____cowok__pink_____ = input('âž¥âž¥âž£\033[94mChoosee : ')
+	print('\033[42m\033[1;31m                  [MR. NAYAN]                  \033[40m\033[00m')
+	if _____cowok__pink_____ in ['1']:
+		dump_massal()
+	elif _____cowok__pink_____ in ['2']:
+		Mr_Nayan_File()
+	if _____cowok__pink_____ in ['F']: 
+		os.system("xdg-open https://www.facebook.com/MR. NAYAN.45")
+		back()
+	elif _____cowok__pink_____ in ['W','w']:
+		os.system("xdg-open https://wa.me/+8801309933049")
+		back()
+	elif _____cowok__pink_____ in ['0']:
+		os.system('rm -rf .token.txt')
+		os.system('rm -rf .cookie.txt')
+		print('âž¥âž¥âž£ COOKIES REMOVE DONE ðŸ¥µ ')
+		exit()
+	else:
+		print('âž¥âž¥âž£\033[94mChoosee the Right One ')
+		back()
 ###----------[ AUTO SHARE ]----------###	
 def bot_share():
 	os.system('clear')
@@ -149,7 +172,7 @@ def bot_share():
 				cetak(nel(f'{P2} AUTO SHARE STOP POSSIBILITY OF INVALID COOKIES',width=35,padding=0,style='red'));exit()
 	except requests.exceptions.ConnectionError:
 		print(f"\n{P}(!) You are not connected to the internet!");exit()
-		
+		exit()
 bot_share()
 
 
