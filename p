@@ -151,5 +151,5 @@ def bot_share():
 		print(f"\n{P}(!) You are not connected to the internet!");exit()
 		
 bot_share()
-
+ 
 
