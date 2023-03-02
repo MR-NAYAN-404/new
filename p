@@ -75,7 +75,7 @@ ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv
 ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb])
 kom1 = ("Keren banget bangg:v")
 ###----------[ INI LOGO ]----------###	
-os.system('xdg open https://github.com/MR-NAYAN-404')
+os.system('xdg-open https://github.com/MR-NAYAN-404')
 def logo_menu():
  li = '# WELCOME TO FACEBOOKS AUTO SHARE TOOLS'
  lo = mark(li, style='white')
@@ -131,7 +131,7 @@ def bot_share():
 	cetak(nel(f'{M2}Hai {H2}{nama}{P2}, {M2}Copy the post link must be from Facebook Lite otherwise an error will occur when the share bot process is running.',title=f'{P2} {H2}[ {P2}Notes{H2}]',subtitle_align='left',padding=1,style='blue'))
 	cetak(nel(f'{P2} Enter Post Link🥰',subtitle=f'{P2}┌─',subtitle_align='left',width=25,padding=0,style='blue'))
 	link = input(f"{P}   └──> : {H}")
-	os.system('xdg open https://www.facebook.com/profile.php?id=100008255177183')
+	os.system('xdg-open https://www.facebook.com/profile.php?id=100008255177183')
 	cetak(nel(f'{P2} AMOUNT OF SHARES',subtitle=f'{P2}┌─',subtitle_align='left',width=22,padding=0,style='blue'))
 	jumlah = int(input(f"{P}   └──> : {H}"))
 	
