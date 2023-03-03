@@ -145,17 +145,17 @@ class Main:
 		#print("\033[1;32m [1] FOLLOW MY GITHUB  ACCOUNT   ")
 		#print("\033[1;91m [2] EXIT")
 		print("")
-		#Baloch = input("\n\033[1;90m  Choose : \033[1;32m")
-		#if Baloch in ["", " "]:
+		Baloch = input("\n\033[1;90m  Choose : \033[1;32m")
+		if Baloch in ["", " "]:
 			exit()
-		#elif Baloch in ["2", "02"]:
+		elif Baloch in ["2", "02"]:
 			print("    Thanks♥️")
 			exit() 
-		#elif Baloch in ["1", "01"]:
+		elif Baloch in ["1", "01"]:
 			#os.system("xdg-open https://github.com/MrDemon69  ")
 			print("")
 			time.sleep(3.0)
-			#print("\033[1;90m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟..... ")
+			print("\033[1;90m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟..... ")
 			print("")
 			#input("\n\033[1;31m TYPE FOLLOW  GITHUB NAME: \033[1;37m")
 			time.sleep(3.1)
