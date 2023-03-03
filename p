@@ -146,12 +146,12 @@ class Main:
 		#print("\033[1;91m [2] EXIT")
 		print("")
 		#Baloch = input("\n\033[1;90m  Choose : \033[1;32m")
-		if Baloch in ["", " "]:
+		#if Baloch in ["", " "]:
 			exit()
-		elif Baloch in ["2", "02"]:
+		#elif Baloch in ["2", "02"]:
 			print("    Thanks♥️")
 			exit() 
-		elif Baloch in ["1", "01"]:
+		#elif Baloch in ["1", "01"]:
 			#os.system("xdg-open https://github.com/MrDemon69  ")
 			print("")
 			time.sleep(3.0)
