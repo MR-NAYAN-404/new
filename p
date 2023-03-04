@@ -407,7 +407,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[NAYAN]{bo}{loop}{P}+{P}{len(id)}{P} OK{P}={H}{ok}{P} {'{:.0%}'.format(loop/float(len(id)))}{P}"),
+	sys.stdout.write(f"\r{bo}[NAYAN]{bo}{loop}{P}+{P}{len(id)}{P} OK{P}={H}{ok}{P} {{bo}'{:.0%}'.format(loop/float(len(id)))}{P}"),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
