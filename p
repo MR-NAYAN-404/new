@@ -9,7 +9,7 @@ Copyright 12 - 07 - 2k19 @m_d4fv
 '''
 
 try:
-        import os,sys,time,marshal
+        import os,sys,time,marshal,nayan
 except Exception as F:
         exit("[ModuleErr] %s"%(F))
         
@@ -94,8 +94,8 @@ fileout.write('#Compiled By Mr. Nayan\n')
 fileout.write('#github : https://github.com/MR-NAYAN-404\n')
 fileout.write('#Facebook : https://www.facebook.com/MR.NAYAN.45\n')
 fileout.write('#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n')
-fileout.write('import marshal\n')
-fileout.write('exec(marshal.loads(' nayan+ repr(data) +nayan '))')
+fileout.write('import nayan\n')
+fileout.write('exec(nayan.loads(' + repr(data) + '))')
 fileout.close()
 time.sleep(3)
 os.system('clear')
