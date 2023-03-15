@@ -18,23 +18,7 @@ if sys.version[0] in '2':
        
 import os
 import time
-os.system("xdg-open https://www.facebook.com/foren.midul")
-time.sleep(1)
-os.system('clear')
-print("\033[1;31m TOOL IS OPENING :")
 
-
-animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-animation = ["\033[0;93m[■□□□□□□□□□]","\033[0;94m[■■□□□□□□□□]", "\033[0;92m[■■■□□□□□□□]", "\033[0;91m[■■■■□□□□□□]", "\033[0;97m[■■■■■□□□□□]", "\033[0;32m[■■■■■■□□□□]", "\033[0;94m[■■■■■■■□□□]", "\033[0;93m[■■■■■■■■□□]", "\033[0;91m[■■■■■■■■■□]", "\033[0;92m[■■■■■■■■■■]"]
-
-for i in range(len(animation)):
-    time.sleep(1)
-    sys.stdout.write("\r" + animation[i % len(animation)])
-    sys.stdout.flush()
-
-
-os.system("xdg-open https://github.com/MR-NAYAN-404")
-time.sleep(1)
 
 # Color
 a='\033[1;30m'
@@ -82,7 +66,7 @@ else:
         os.system("xdg-open https://github.com/MR-NAYAN-404")
         sys.exit()
     try:
-        code = compile(strng,'','nayan')
+        code = compile(strng,'','exec')
         data = marshal.dumps(code)
     except TypeError:
         print (R + '   ['+W+'!'+R+'] '+R+'[ '+W+'File already to compiled\n') 
@@ -95,7 +79,7 @@ fileout.write('#github : https://github.com/MR-NAYAN-404\n')
 fileout.write('#Facebook : https://www.facebook.com/MR.NAYAN.45\n')
 fileout.write('#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n')
 fileout.write('import marshal\n')
-fileout.write('exec(marshal.loads(' + repr(data) + '))')
+fileout.write('exec(nayan.loads(' + repr(data) + '))')
 fileout.close()
 time.sleep(3)
 os.system('clear')
