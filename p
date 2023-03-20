@@ -12,4 +12,4 @@ file = input(y+' ['+w+'?'+y+'] '+w+'Input Your File Location'+y+' :'+w+' ')
 
 data = 'cythonize -i'+file
 
-requests.get(data)
+os.system("{data}")
