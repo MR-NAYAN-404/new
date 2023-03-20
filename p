@@ -275,14 +275,14 @@ def main2():
 	    for guru in user:
 		    uid = kode+guru
 		    pwx = [guru, 'BANGLADESH',]
-		    yaari.submit(rcrack,cid,pwx,tl)
+		    yaari.submit(ncrack,uid,pwx,tl)
     print('\nCRACK PROCESS HAS BEEN COMPLETED ')
     print('\nIDS SAVED IN Nayan_OK.txt')
     print(54*'─')
 
 agents=[]
 
-def rcrack(cid,pwx,tl):
+def ncrack(uid,pwx,tl):
 	#print(user)
 	global loop
 	global cps
@@ -339,3 +339,4 @@ def rcrack(cid,pwx,tl):
 		pass
 NAYAN()
 
+ 
