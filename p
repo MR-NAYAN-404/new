@@ -165,7 +165,7 @@ def banner():
  
 
 
-def menu:
+def menu():
 	os.system('clear')
 	banner()
 	DEVILj(f'----------------------------------------------------------------------------')
