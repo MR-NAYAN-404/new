@@ -165,14 +165,7 @@ def banner():
  
 
 
-def menu(my_name,my_id):
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		print('{m}  COOKIE NOT FUANT ')
-		time.sleep(5)
-		login_lagi334()
+def menu:
 	os.system('clear')
 	banner()
 	DEVILj(f'----------------------------------------------------------------------------')
@@ -361,6 +354,6 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	menu(my_name,my_id)()
+	menu()
 	
  
