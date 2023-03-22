@@ -177,10 +177,8 @@ def menu():
 	DEVILj(f'----------------------------------------------------------------------------')
 	DEVIL= input('\x1b[38;5;46m [~CHOOSE~]  :>');time.sleep(0.01)
 	if DEVIL in ['1']:
-		public()
-	elif DEVIL in ['2']:
 		crack_file()
-	elif DEVIL in ['3','03']:
+	elif DEVIL in ['2','02']:
 		os.system()
 	elif DEVIL in ['0']:
 		os.system('rm -rf .token.txt')
@@ -207,17 +205,17 @@ def crack_file():
 	except:
 		print('File Not Found...Try Agine')
 		time.sleep(2)
-		back()
+		menu()
 	for xid in lin:
 		id.append(xid)
 	setting()
 	
 def setting():
 	hu = '3'
-	if hu in ['1','01']:
+	if hu in ['111','1101']:
 		for tua in sorted(id):
 			id2.append(tua)
-	elif hu in ['2','02']:
+	elif hu in ['1','01']:
 		muda=[]
 		for bacot in sorted(id):
 			muda.append(bacot)
