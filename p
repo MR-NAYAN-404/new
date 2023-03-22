@@ -361,6 +361,6 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	login()
+	menu(my_name,my_id)()
 	
  
