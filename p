@@ -176,7 +176,7 @@ def xxr():
             uid = code+love
             for Eman in HamiiID:
                 pwx.append(Eman)
-                pwx.append(love, 'bangladesh','BANGLADESH','@#@#@#',)
+                pwx.append(love)
             manshera.submit(rcrack,uid,pwx,tl)
     print(f"\n{x} ══════════════════════════════════════════")
 def rcrack(uid,pwx,tl):
