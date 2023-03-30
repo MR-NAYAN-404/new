@@ -2,7 +2,7 @@
 ## NAME TO YAAD HE 🍌✌️
 from os import path
 import os,base64,zlib,pip,urllib
-os.system('xdg-open https://facebook.com/groups/291183553213655/')
+#os.system('xdg-open https://facebook.com/groups/291183553213655/')
 print('\n\033[1;97m [•] checking update 10.8 \n [•] wait a few sec... \n [•] Join Sk facebook Group')
 
 try:
