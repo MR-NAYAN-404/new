@@ -544,10 +544,10 @@ def approval():
   try:
     httpCaht = requests.get('https://github.com/MR-NAYAN-404/Mr-Nayan/blob/main/Fuck').text
     if id in httpCaht:
-      print("\Your Token is Successfully Approved")
+      print("\nYour Token is Successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
-      SK_Main()
+      main()
       pass
     else:
       print("Your Token : "+id)
