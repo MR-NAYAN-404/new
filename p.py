@@ -759,8 +759,9 @@ def menu():
                                 with tred(max_workers=30) as crack_submit:
                                         clear()
                                         total_ids = str(len(fo))
-                                        print('Total account : \033[1;97m'+total_ids+f' \033[1;33m\033[1;36m \033[1;97mMethod  \033[1;97mM{mthd}')
-                                        print("\033[1;97mUse flight mode for speed up\033[1;97m")
+                                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mTOTAL IDS : \033[1;92m'+total_ids+f' \033[1;33m>\033[1;36m> \n\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mMethod: \033[1;92m -> \033[1;97mM{mthd}')
+                                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[97;1mUSE \033[1;34m[\033[1;32mDATA\033[1;97m/\033[38;5;196mWIFI\033[1;34m] ')
+                                        print('\033[97;1m[\033[92;1m✓\033[97;1m]\033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE ')
                                         linex()
                                         for user in fo:
                                                 ids,names = user.split('|')
