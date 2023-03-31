@@ -547,7 +547,7 @@ def approval():
       print("\nYour Token is Successfully Approved")
       msg = str(os.geteuid())
       time.sleep(0.5)
-      main()
+      menu()
       pass
     else:
       print("Your Token : "+id)
